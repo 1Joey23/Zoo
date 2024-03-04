@@ -1,0 +1,6 @@
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\Foods\bin\Debug\Foods.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\Foods\bin\Debug\Foods.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\Foods\obj\Debug\Foods.csproj.AssemblyReference.cache
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\Foods\obj\Debug\Foods.csproj.CoreCompileInputs.cache
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\Foods\obj\Debug\Foods.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\Foods\obj\Debug\Foods.pdb

@@ -1,0 +1,6 @@
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\Utilities\bin\Debug\Utilities.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\Utilities\bin\Debug\Utilities.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\Utilities\obj\Debug\Utilities.csproj.AssemblyReference.cache
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\Utilities\obj\Debug\Utilities.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\Utilities\obj\Debug\Utilities.pdb
