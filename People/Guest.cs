@@ -10,6 +10,7 @@ using System;
 using CagedItems;
 using Animals;
 using Utilites;
+using System.Text.RegularExpressions;
 
 namespace People
 {
@@ -79,7 +80,14 @@ namespace People
             }
             set
             {
-                this.age = value;
+                if (value >= 0 && value <= 120)
+                {
+                    this.age = value;
+                }
+                else
+                {
+                    throw new ArgumentOutOfRangeException("The age must be between 0 and 120, inclusive.");
+                }
             }
         }
 
@@ -106,7 +114,14 @@ namespace People
             }
             set
             {
-                this.name = value;
+                if (!Regex.IsMatch(value, @"^[a-zA-Z ]+$"))
+                {
+                    throw new FormatException("Name must be alphatetical letters only without spaces. (i.e. name)");
+                }
+                else // Runs if valid name is entered.
+                {
+                    this.name = value;
+                }
             }
         }
 

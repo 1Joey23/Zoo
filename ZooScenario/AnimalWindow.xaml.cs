@@ -53,46 +53,43 @@ namespace ZooScenario
 
         private void nameTextBox_LostFocus(object sender, RoutedEventArgs e)
         {
-            string value = this.nameTextBox.Text;
-            if (!Regex.IsMatch(value, @"^[a-zA-Z ]+$"))
+            try
             {
-                MessageBox.Show("Name must be alphatetical letters only without spaces. (i.e. name)");
-                okButton.IsEnabled = false;
+                animal.Name = this.nameTextBox.Text;
+                this.okButton.IsEnabled = true;
             }
-            else // Runs if a valid name is entered.
+            catch (Exception ex)
             {
-                animal.Name = value;
-                okButton.IsEnabled = true;
+                MessageBox.Show(ex.Message);
+                this.okButton.IsEnabled = false;
             }
         }
 
         private void ageTextBox_LostFocus(object sender, RoutedEventArgs e)
         {
-            int age = int.Parse(this.ageTextBox.Text);
-            if (age >= 0 && age <= 100)
-            {   
-                animal.Age = age;
-                okButton.IsEnabled = true;
-            }
-            else
+            try
             {
-                MessageBox.Show("The age must be between 0 and 100, inclusive.");
-                okButton.IsEnabled = false;
+                animal.Age = int.Parse(this.ageTextBox.Text);
+                this.okButton.IsEnabled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                this.okButton.IsEnabled = false;
             }
         }
 
         private void weightTextBox_LostFocus(object sender, RoutedEventArgs e)
         {
-            double weight = double.Parse(this.weightTextBox.Text);
-            if (weight >= 0 && weight <= 1000)
+            try
             {
-                animal.Weight = weight;
-                okButton.IsEnabled = true;
+                animal.Weight = double.Parse(this.weightTextBox.Text);
+                this.okButton.IsEnabled = true;
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("The weight must be between 0 and 1000, inclusive.");
-                okButton.IsEnabled = false;
+                MessageBox.Show(ex.Message);
+                this.okButton.IsEnabled = false;
             }
         }
 

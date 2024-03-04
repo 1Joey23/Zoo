@@ -105,3 +105,7 @@ C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisl
 C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\People\obj\Debug\People.csproj.CopyComplete
 C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\People\obj\Debug\People.dll
 C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\People\obj\Debug\People.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\People\bin\Debug\CagedItems.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\People\bin\Debug\Utilities.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\People\bin\Debug\CagedItems.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\People\bin\Debug\Utilities.pdb

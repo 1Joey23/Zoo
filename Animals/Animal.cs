@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
+using System.Text.RegularExpressions;
 using System.Timers;
 using CagedItems;
 using Foods;
@@ -110,7 +111,14 @@ namespace Animals
 
             set
             {
-                this.name = value;
+                if (!Regex.IsMatch(value, @"^[a-zA-Z ]+$"))
+                {
+                    throw new FormatException("Name must be alphatetical letters only without spaces. (i.e. name)");
+                }
+                else // Runs if valid name is entered.
+                {
+                    this.name = value;
+                }
             }
         }
 
@@ -125,7 +133,14 @@ namespace Animals
             }
             set
             {
-                this.age = value;
+                if (value >= 0 && value <= 100)
+                {
+                    this.age = value;
+                }
+                else
+                {
+                    throw new ArgumentOutOfRangeException("The age must be between 0 and 100, inclusive.");
+                }
             }
         }
 
@@ -142,7 +157,14 @@ namespace Animals
 
             set
             {
-                this.weight = value;
+                if (value >= 0 && value <= 1000)
+                {
+                    this.weight = value;
+                }
+                else
+                {
+                    throw new ArgumentOutOfRangeException("The weight must be between 0 and 1000, inclusive.");
+                }
             }
         }
 
@@ -273,16 +295,6 @@ namespace Animals
             }
             return type;
         }
-
-        /*Chimpanzee,
-        Dingo,
-        Eagle,
-        Hummingbird,
-        Kangaroo,
-        Ostrich,
-        Platypus,
-        Shark,
-        Squirrel*/
 
         /// <summary>
         /// Eats the specified food.

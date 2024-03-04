@@ -107,3 +107,7 @@ C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisl
 C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\obj\Debug\BirthingRooms.csproj.CopyComplete
 C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\obj\Debug\BirthingRooms.dll
 C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\obj\Debug\BirthingRooms.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\CagedItems.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\Utilities.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\CagedItems.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\Utilities.pdb
