@@ -1,17 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B509A6AA-AD50-4FB3-AAF3-BB27DE0A76E9}</ProjectGuid>
+    <ProjectGuid>{B80016C2-4100-482E-A6B6-53AA9D60DF0B}</ProjectGuid>
     <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ZooConsole</RootNamespace>
     <AssemblyName>ZooConsole</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -53,37 +54,48 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Accounts\Accounts.csproj">
-      <Project>{8547F40C-AFAB-4ED7-B3E8-7E7C6400F4E1}</Project>
+      <Project>{dd92848a-816d-4835-8f51-ce72bd5407db}</Project>
       <Name>Accounts</Name>
     </ProjectReference>
     <ProjectReference Include="..\Animals\Animals.csproj">
-      <Project>{7bace754-1eee-45ea-a30f-2fb3288f212f}</Project>
+      <Project>{ce73316d-b770-4638-a44e-5732a4182f4f}</Project>
       <Name>Animals</Name>
     </ProjectReference>
+    <ProjectReference Include="..\BirthingRooms\BirthingRooms.csproj">
+      <Project>{c1b52860-8b01-4800-973a-30ae80b7e507}</Project>
+      <Name>BirthingRooms</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BoothItems\BoothItems.csproj">
-      <Project>{6740E2B0-EBBB-4494-A237-FB1E5BDB6B07}</Project>
+      <Project>{0115e053-5070-4a75-9566-f3c86b43d03d}</Project>
       <Name>BoothItems</Name>
     </ProjectReference>
     <ProjectReference Include="..\MoneyCollectors\MoneyCollectors.csproj">
-      <Project>{E594795E-389E-405B-9DDA-FADE3D870D79}</Project>
+      <Project>{1df4cea5-9e59-4be6-a00f-ee3cf3087c08}</Project>
       <Name>MoneyCollectors</Name>
     </ProjectReference>
     <ProjectReference Include="..\People\People.csproj">
-      <Project>{56f9e695-9c71-49f4-a4e2-df464b254173}</Project>
+      <Project>{aa1b7651-2f2c-4348-aa31-14fddcdbdc5a}</Project>
       <Name>People</Name>
     </ProjectReference>
     <ProjectReference Include="..\Reproducers\Reproducers.csproj">
-      <Project>{31a1844c-33a9-4351-802a-f3aa4c31cc5e}</Project>
+      <Project>{28bf9fc3-ea4a-49ad-a49c-fd8ca77174f4}</Project>
       <Name>Reproducers</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ZooScenario\ZooScenario.csproj">
-      <Project>{475c4cd4-604f-419d-b5fd-8a9e31496169}</Project>
-      <Name>ZooScenario</Name>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{afb7aa8c-157a-405d-8574-0355c1631e61}</Project>
+      <Name>Utilities</Name>
     </ProjectReference>
     <ProjectReference Include="..\Zoos\Zoos.csproj">
-      <Project>{b9cb6e8b-ea4f-4f4d-b663-8447e9d02d63}</Project>
+      <Project>{9116e7a7-d531-4b54-a3df-9552f4f06139}</Project>
       <Name>Zoos</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
 </Project>

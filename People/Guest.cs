@@ -1,28 +1,44 @@
-﻿using BoothItems;
+﻿using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.RegularExpressions;
+using System.Timers;
+using Animals;
+using BoothItems;
+using CagedItems;
 using Foods;
 using MoneyCollectors;
-using System.Collections.Generic;
-using VendingMachines;
 using Reproducers;
-using System.Security.Principal;
-using Accounts;
-using System;
-using CagedItems;
-using Animals;
-using Utilites;
-using System.Text.RegularExpressions;
+using Utilities;
+using VendingMachines;
 
 namespace People
 {
     /// <summary>
     /// The class which is used to represent a guest.
     /// </summary>
+    [Serializable]
     public class Guest : IEater, ICageable
     {
         /// <summary>
         /// The age of the guest.
         /// </summary>
         private int age;
+
+        /// <summary>
+        /// A bag for holding the guest's items.
+        /// </summary>
+        private List<Item> bag;
+
+        /// <summary>
+        /// The checking account for collecting money.
+        /// </summary>
+        private IMoneyCollector checkingAccount;
+
+        /// <summary>
+        /// The gender of the guest.
+        /// </summary>
+        private Gender gender;
 
         /// <summary>
         /// The name of the guest.
@@ -34,20 +50,16 @@ namespace People
         /// </summary>
         private Wallet wallet;
 
-        /// <summary>
-        /// Allow the guest to hold onto the items from booths.
-        /// </summary>
-        private List<Item> bag;
+        [NonSerialized]
+        private Action<Guest> onTextChange;
 
-        /// <summary>
-        /// Gender of the guest.
-        /// </summary>
-        private Gender gender;
+        private Animal adoptedAnimal;
 
-        /// <summary>
-        /// The guests checking account.
-        /// </summary>
-        private IMoneyCollector checkingAccount;
+        [NonSerialized]
+        // The time it takes the guest to get the vending machine food and realize the animal is hungry.
+        private Timer feedTimer;
+
+        private bool isActive;
 
         /// <summary>
         /// Initializes a new instance of the Guest class.
@@ -56,47 +68,118 @@ namespace People
         /// <param name="age">The age of the guest.</param>
         /// <param name="moneyBalance">The initial amount of money to put into the guest's wallet.</param>
         /// <param name="walletColor">The color of the guest's wallet.</param>
-        public Guest(string name, int age, IMoneyCollector checkingAccount ,decimal moneyBalance, WalletColor walletColor, Gender gender)
+        /// <param name="gender">The gender of the guest.</param>
+        /// <param name="checkingAccount">The account for collecting money.</param>
+        public Guest(string name, int age, decimal moneyBalance, WalletColor walletColor, Gender gender, IMoneyCollector checkingAccount)
         {
             this.age = age;
+            this.bag = new List<Item>();
+            this.checkingAccount = checkingAccount;
+            this.checkingAccount.OnBalanceChange += HandleBalanceChange;
+            this.gender = gender;
             this.name = name;
             this.wallet = new Wallet(walletColor, new MoneyPocket());
+            this.wallet.OnBalanceChange += HandleBalanceChange;
+
+            // Add money to wallet.
             this.wallet.AddMoney(moneyBalance);
-            this.bag = new List<Item>();
-            this.gender = gender;
-            this.checkingAccount = checkingAccount;
             this.XPosition = 0;
             this.YPosition = 0;
+
+            this.CreateTimers();
         }
 
         /// <summary>
-        /// Get the age of the guest.
+        /// Gets or sets the age of the guest.
         /// </summary>
         public int Age
         {
             get
             {
-                return age;
+                return this.age;
             }
+
             set
             {
-                if (value >= 0 && value <= 120)
+                if (value < 0 || value > 120)
                 {
-                    this.age = value;
+                    throw new ArgumentOutOfRangeException("age", "Age must be between 0 and 120.");
                 }
-                else
+
+                this.age = value;
+                if (OnTextChange != null)
                 {
-                    throw new ArgumentOutOfRangeException("The age must be between 0 and 120, inclusive.");
+                    OnTextChange(this);
                 }
             }
         }
 
+        /// <summary>
+        /// Gets or sets the guest's adopted animal.
+        /// </summary>
+        public Animal AdoptedAnimal 
+        {
+            get
+            {
+                return this.adoptedAnimal;
+            }
+            set
+            {
+                // If there was an adopted animal and it has an OnHunger delegate, clear it
+                if (this.adoptedAnimal != null && this.adoptedAnimal.OnHunger != null)
+                {
+                    this.adoptedAnimal.OnHunger = null;
+                }
+
+                // Set the adopted animal to the new value
+                this.adoptedAnimal = value;
+
+                // If the newly adopted animal exists, attach the HandleAnimalHungry method to its OnHunger delegate
+                if (this.adoptedAnimal != null)
+                {
+                    this.adoptedAnimal.OnHunger += HandleAnimalHungry;
+                }
+
+                // Raise the OnTextChange event if it's not null
+                if (OnTextChange != null)
+                {
+                    OnTextChange(this);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets the proportion at which to display the guest.
+        /// </summary>
+        public double DisplaySize
+        {
+            get
+            {
+                return 0.6;
+            }
+        }
+
+        /// <summary>
+        /// Gets the guest's checking account.
+        /// </summary>
+        public IMoneyCollector CheckingAccount
+        {
+            get
+            {
+                return this.checkingAccount;
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the guest's gender.
+        /// </summary>
         public Gender Gender
         {
             get
             {
                 return this.gender;
             }
+
             set
             {
                 this.gender = value;
@@ -104,7 +187,7 @@ namespace People
         }
 
         /// <summary>
-        /// Gets the name of the guest.
+        /// Gets or sets the name of the guest.
         /// </summary>
         public string Name
         {
@@ -112,31 +195,36 @@ namespace People
             {
                 return this.name;
             }
+
             set
             {
                 if (!Regex.IsMatch(value, @"^[a-zA-Z ]+$"))
                 {
-                    throw new FormatException("Name must be alphatetical letters only without spaces. (i.e. name)");
+                    throw new ArgumentException("Names can contain only upper- and lowercase letters A-Z and spaces.");
                 }
-                else // Runs if valid name is entered.
+
+                this.name = value;
+                if (OnTextChange != null)
                 {
-                    this.name = value;
+                    OnTextChange(this);
                 }
             }
         }
 
-        public IMoneyCollector CheckingAccount
+        /// <summary>
+        /// Gets the resource key of the guest.
+        /// </summary>
+        public string ResourceKey
         {
             get
             {
-                return this.checkingAccount;
-            }
-            set
-            {
-                this.checkingAccount = value;
+                return "Guest";
             }
         }
 
+        /// <summary>
+        /// Gets the guest's wallet.
+        /// </summary>
         public Wallet Wallet
         {
             get
@@ -146,62 +234,56 @@ namespace People
         }
 
         /// <summary>
-        /// Gets the weight of the guest.
+        /// Gets or sets the weight of the guest.
         /// </summary>
-        public double Weight
+        public double Weight { get; set; }
+
+        /// <summary>
+        /// Gets or sets the horizontal position of the guest.
+        /// </summary>
+        public int XPosition { get; set; }
+
+        /// <summary>
+        /// Gets or sets the vertical position of the guest.
+        /// </summary>
+        public int YPosition { get; set; }
+
+        /// <summary>
+        /// Gets or sets the horizontal direction of the guest.
+        /// </summary>
+        public HorizontalDirection XDirection { get; set; }
+
+        /// <summary>
+        /// Gets or sets the vertical direction of the guest.
+        /// </summary>
+        public VerticalDirection YDirection { get; set; }
+
+        /// <summary>
+        /// Gets the percentage of weight gained when consuming food.
+        /// </summary>
+        public double WeightGainPercentage
         {
             get
             {
-                // Confidential.
                 return 0.0;
             }
         }
 
-        public Animal AdoptedAnimal
-        {
-            get;
-
-            set;
-        }
-
-        public double DisplaySize
+        public Action<Guest> OnTextChange
         {
             get
             {
-                return 0.6;
+                return this.onTextChange;
             }
-        }
-
-        public string ResourceKey
-        {
-            get
+            set
             {
-                return "Guest";
+                this.onTextChange = value;
             }
         }
 
-        public int XPosition
+        public HungerState HungerState
         {
             get;
-            protected set;
-        }
-
-        public int YPosition
-        {
-            get;
-            protected set;
-        }
-
-        public HorizontalDirection XDirection
-        {
-            get;
-            protected set;
-        }
-
-        public VerticalDirection YDirection
-        {
-            get;
-            protected set;
         }
 
         /// <summary>
@@ -218,14 +300,18 @@ namespace People
         /// </summary>
         /// <param name="eater">The eater to be fed.</param>
         /// <param name="animalSnackMachine">The animal snack machine from which to buy food.</param>
-        public void FeedAnimal(IEater eater, VendingMachine animalSnackMachine)
+        public void FeedAnimal(IEater eater)
         {
+            // Get the vending machine
+            VendingMachine animalSnackMachine = GetVendingMachine();
+
             // Find food price.
             decimal price = animalSnackMachine.DetermineFoodPrice(eater.Weight);
 
+            // Check if guest has enough money on hand and withdraw from account if necessary.
             if (this.wallet.MoneyBalance < price)
             {
-                this.WithdrawMoney(price *= 10);
+                this.WithdrawMoney(price * 10);
             }
 
             // Get money from wallet.
@@ -238,76 +324,142 @@ namespace People
             eater.Eat(food);
         }
 
+        public Func<VendingMachine> GetVendingMachine
+        {
+            get;
+            set;
+        }
+
+        public Action<ICageable> OnImageUpdate
+        {
+            get;
+            set;
+        }
+
+        public bool IsActive
+        {
+            get
+            {
+                return this.isActive;
+            }
+            set
+            {
+                this.isActive = value;
+            }
+        }
+
         /// <summary>
-        /// Make the guest visit the information booth.
+        /// Generates a string representation of the guest.
         /// </summary>
-        /// <param name="informationBooth">The information booth.</param>
+        /// <returns>A string representation of the guest.</returns>
+        public override string ToString()
+        {
+            string result = string.Format("{0}: {1} [${2} / ${3}]", this.Name, this.Age, this.Wallet.MoneyBalance, this.CheckingAccount.MoneyBalance);
+
+            if (this.AdoptedAnimal != null)
+            {
+                result += ", " + this.AdoptedAnimal.Name;
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// Visits the information booth to obtain a coupon book and a map.
+        /// </summary>
+        /// <param name="informationBooth">The booth to visit.</param>
         public void VisitInformationBooth(GivingBooth informationBooth)
         {
-            // The map process. (Doesn't do anything with resulting map.)
+            // Get map.
             Map map = informationBooth.GiveFreeMap();
-            this.bag.Add(map);
 
-            // The Coupon Book process. (Doesn't do anything with resulting coupon book.)
+            // Get coupon book.
             CouponBook couponBook = informationBooth.GiveFreeCouponBook();
+
+            // Add items to bag.
+            this.bag.Add(map);
             this.bag.Add(couponBook);
         }
 
         /// <summary>
-        /// Make the guest visit the ticket booth.
+        /// Visits the booth to purchase a ticket and a water bottle.
         /// </summary>
-        /// <param name="ticketBooth"> The ticket booth</param>
-        /// <returns>The guests ticket.</returns>
+        /// <param name="ticketBooth">The booth to visit.</param>
+        /// <returns>A purchased ticket.</returns>
         public Ticket VisitTicketBooth(MoneyCollectingBooth ticketBooth)
         {
-            try
+            if (this.wallet.MoneyBalance < ticketBooth.TicketPrice)
             {
-                // The ticket process
-                decimal ticketPrice = ticketBooth.TicketPrice;
-                if (this.wallet.MoneyBalance < ticketPrice)
-                {
-                    this.WithdrawMoney(ticketPrice *= 2);
-                }
-
-                decimal amountRemovedTicket = wallet.RemoveMoney(ticketPrice);
-                Ticket ticket = ticketBooth.SellTicket(amountRemovedTicket);
-
-                // The "Bottoh o wottoh" process.
-                decimal waterPrice = ticketBooth.WaterBottlePrice;
-                if (this.wallet.MoneyBalance < waterPrice)
-                {
-                    this.WithdrawMoney(waterPrice *= 2);
-                }
-                decimal amountRemovedWater = wallet.RemoveMoney(waterPrice);
-                WaterBottle water = ticketBooth.SellWaterBottle(amountRemovedWater);
-                this.bag.Add(water);
-                return ticket;
+                this.WithdrawMoney(ticketBooth.TicketPrice * 2);
             }
-            catch (Exception ex)
+
+            // Take ticket money out of wallet.
+            decimal ticketPayment = this.wallet.RemoveMoney(ticketBooth.TicketPrice);
+
+            // Buy ticket.
+            Ticket ticket = ticketBooth.SellTicket(ticketPayment);
+
+            if (this.wallet.MoneyBalance < ticketBooth.WaterBottlePrice)
             {
-                throw new NullReferenceException(ex.Message);
+                this.WithdrawMoney(ticketBooth.WaterBottlePrice * 2);
             }
+
+            // Take water bottle money out of wallet.
+            decimal waterPayment = this.wallet.RemoveMoney(ticketBooth.WaterBottlePrice);
+
+            // Buy water bottle.
+            WaterBottle bottle = ticketBooth.SellWaterBottle(waterPayment);
+
+            // Add water bottle to bag.
+            this.bag.Add(bottle);
+
+            return ticket;
         }
 
         /// <summary>
-        /// Remove money from checking into the guests wallet.
+        /// Withdraws money from the checking account and puts it into the wallet.
         /// </summary>
-        /// <param name="amount">Amount in $.</param>
+        /// <param name="amount">The amount of money to withdraw.</param>
         public void WithdrawMoney(decimal amount)
         {
-            this.checkingAccount.RemoveMoney(amount);
-            this.wallet.AddMoney(amount);
-            this.ToString();
+            decimal retrievedAmount = this.checkingAccount.RemoveMoney(amount);
+
+            this.wallet.AddMoney(retrievedAmount);
+        }
+
+        public void HandleAnimalHungry()
+        {
+            this.feedTimer.Start();
+        }
+
+        public void HandleReadyToFeed(object sender, ElapsedEventArgs e)
+        {
+            this.FeedAnimal(this.adoptedAnimal);
+            this.feedTimer.Stop();
+        }
+
+        private void CreateTimers()
+        {
+            // The hunger timer 5 sec.
+            this.feedTimer = new Timer(5000);
+            this.feedTimer.Elapsed += HandleReadyToFeed;
         }
 
         /// <summary>
-        /// Override the string to output the guest stats.
+        /// Creates timers when the guest is deserialized.
         /// </summary>
-        /// <returns>The guest stats.</returns>
-        public override string ToString()
+        [OnDeserialized]
+        private void OnDeserialized(StreamingContext context)
         {
-            return $"Name: Age [$MoneyBalance / $Account]\n{name}: {age} [${wallet.MoneyBalance} / ${checkingAccount.MoneyBalance}]" +
-                $" \n Adopted Animal: {this.AdoptedAnimal}";
+            this.CreateTimers();
+        }
+
+        private void HandleBalanceChange()
+        {
+            if (OnTextChange != null)
+            {
+                OnTextChange(this);
+            }
         }
     }
 }

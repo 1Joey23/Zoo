@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZooScenario"
         mc:Ignorable="d"
-        Title="GuestWindow" Height="600" Width="800" Loaded="Window_Loaded">
+        Title="GuestWindow" Height="600" Width="800" Loaded="window_Loaded">
     <Grid Margin="0,0,0,-6">
         <Grid Margin="56,59,65,60">
             <Grid.RowDefinitions>
@@ -37,11 +37,11 @@
             <ComboBox x:Name="walletColorComboBox" Grid.Row="7" Grid.Column="2" HorizontalAlignment="Left" Margin="39,10,0,0" VerticalAlignment="Top" Width="405" Height="39" FontSize="18" SelectionChanged="walletColorComboBox_SelectionChanged"/>
             <ComboBox x:Name="genderComboBox" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Left" Margin="39,10,0,0" VerticalAlignment="Top" Width="405" Height="39" FontSize="18" SelectionChanged="genderComboBox_SelectionChanged"/>
             <Button x:Name="addMoneyButton" Grid.Column="1" Content="+" HorizontalAlignment="Left" Margin="39,13,0,0" Grid.Row="9" VerticalAlignment="Top" Height="40" Width="40" FontSize="24" FontWeight="Bold" Click="addMoneyButton_Click"/>
-            <Button x:Name="subtractMoneyBalance" Grid.Column="1" Content="-" HorizontalAlignment="Left" Margin="404,13,0,0" Grid.Row="9" VerticalAlignment="Top" Height="40" Width="40" FontSize="24" FontWeight="Bold" Click="subtractMoneyBalance_Click"/>
+            <Button x:Name="subtractMoneyButton" Grid.Column="1" Content="-" HorizontalAlignment="Left" Margin="404,13,0,0" Grid.Row="9" VerticalAlignment="Top" Height="40" Width="40" FontSize="24" FontWeight="Bold" Click="subtractMoneyButton_Click"/>
             <ComboBox x:Name="moneyAmountComboBox" Grid.Row="9" Grid.Column="1" HorizontalAlignment="Left" Margin="116,13,0,0" VerticalAlignment="Top" Width="250" Height="39" FontSize="18"/>
             <Label x:Name="moneyBalanceLabel" Content="$0.00" HorizontalAlignment="Left" Margin="204,52,0,0" VerticalAlignment="Top" Width="104" FontSize="20" Grid.Column="1" Grid.Row="9"/>
             <Button x:Name="addAccountButton" Grid.Column="1" Content="+" HorizontalAlignment="Left" Margin="39,13,0,0" Grid.Row="11" VerticalAlignment="Top" Height="40" Width="40" FontSize="24" FontWeight="Bold" Click="addAccountButton_Click"/>
-            <Button x:Name="subtractAccountBalance" Grid.Column="1" Content="-" HorizontalAlignment="Left" Margin="404,13,0,0" Grid.Row="11" VerticalAlignment="Top" Height="40" Width="40" FontSize="24" FontWeight="Bold" Click="subtractAccountBalance_Click"/>
+            <Button x:Name="subtractAccountButton" Grid.Column="1" Content="-" HorizontalAlignment="Left" Margin="404,13,0,0" Grid.Row="11" VerticalAlignment="Top" Height="40" Width="40" FontSize="24" FontWeight="Bold" Click="subtractAccountButton_Click"/>
             <ComboBox x:Name="accountComboBox" Grid.Row="11" Grid.Column="1" HorizontalAlignment="Left" Margin="116,13,0,0" VerticalAlignment="Top" Width="250" Height="39" FontSize="18"/>
             <Label x:Name="accountBalanceLabel" Content="$0.00" HorizontalAlignment="Left" Margin="204,52,0,0" VerticalAlignment="Top" Width="104" FontSize="20" Grid.Column="1" Grid.Row="11"/>
         </Grid>

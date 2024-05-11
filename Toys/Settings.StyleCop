@@ -1,0 +1,9 @@
+<StyleCopSettings Version="105">
+  <GlobalSettings>
+    <CollectionProperty Name="RecognizedWords">
+      <Value>Luv</Value>
+      <Value>Wuv</Value>
+      <Value>WuvLuv</Value>
+    </CollectionProperty>
+  </GlobalSettings>
+</StyleCopSettings>

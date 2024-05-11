@@ -7,15 +7,11 @@ namespace VendingMachines
     /// <summary>
     /// The class which is used to represent a vending machine.
     /// </summary>
+    [Serializable]
     public class VendingMachine
     {
         /// <summary>
-        /// The size of a bag of food used to refill the vending machine.
-        /// </summary>
-        private readonly double bagSize = 65.0;
-
-        /// <summary>
-        /// The amount of food that the vending machine can hold (in pounds).
+        /// The maximums food stock level of the vending machine (in pounds).
         /// </summary>
         private readonly double maxFoodStock = 250.0;
 
@@ -30,7 +26,7 @@ namespace VendingMachines
         private double foodStock;
 
         /// <summary>
-        /// Get the money to the moneycollector from vending machine.
+        /// The vending machine's money box.
         /// </summary>
         private IMoneyCollector moneyBox;
 
@@ -38,18 +34,19 @@ namespace VendingMachines
         /// Initializes a new instance of the VendingMachine class.
         /// </summary>
         /// <param name="foodPrice">The price of food (per pound).</param>
+        /// <param name="moneyBox">The vending machine's money box.</param>
         public VendingMachine(decimal foodPrice, IMoneyCollector moneyBox)
         {
             this.foodPricePerPound = foodPrice;
             this.moneyBox = moneyBox;
 
-            // Fill with an initial load of food.
-            while (!this.IsFull())
-            {
-                this.AddFoodBag();
-            }
+            // Fill vending machine with an initial load of food.
+            this.foodStock = this.maxFoodStock;
         }
 
+        /// <summary>
+        /// Gets the money balance of the vending machine's money box.
+        /// </summary>
         public decimal MoneyBalance
         {
             get
@@ -59,7 +56,7 @@ namespace VendingMachines
         }
 
         /// <summary>
-        /// Adds a specified amount of money to the vending machine.
+        /// Adds money to the vending machine's money box.
         /// </summary>
         /// <param name="amount">The amount of money to add.</param>
         public void AddMoney(decimal amount)
@@ -68,14 +65,13 @@ namespace VendingMachines
         }
 
         /// <summary>
-        /// Removes a specified amount of money from the vending machine.
+        /// Removes the specified amount of money from the vending machine's money box.
         /// </summary>
         /// <param name="amount">The amount of money to remove.</param>
-        /// <returns>The money that was removed.</returns>
+        /// <returns>The amount of money removed.</returns>
         public decimal RemoveMoney(decimal amount)
         {
-            this.moneyBox.RemoveMoney(amount);
-            return amount;
+            return this.moneyBox.RemoveMoney(amount);
         }
 
         /// <summary>
@@ -85,10 +81,10 @@ namespace VendingMachines
         /// <returns>The purchased food.</returns>
         public Food BuyFood(decimal payment)
         {
-            // Add money to vending machine.
+            // Add money to the vending machine.
             this.AddMoney(payment);
 
-            // Determine food weight.
+            // Determine the weight of the food to return based upon the amount paid.
             double weight = (double)(payment / this.foodPricePerPound);
 
             // Reduce stock level.
@@ -105,33 +101,16 @@ namespace VendingMachines
         /// <returns>The price for the amount of food required to sufficiently feed an animal of the specified weight.</returns>
         public decimal DetermineFoodPrice(double animalWeight)
         {
-            // Determine food weight as two percent of the animal weight.
+            // Determine the amount of food required.
             double foodWeight = animalWeight * 0.02;
 
-            // Determine food price by multiplying food weight by price per pound.
+            // Determine food price.
             decimal foodPrice = (decimal)foodWeight * this.foodPricePerPound;
 
-            // Round the price to two decimal places.
+            // Round food price.
             foodPrice = Math.Round(foodPrice, 2);
 
             return foodPrice;
-        }
-
-        /// <summary>
-        /// Add a bag of food to the vending machine.
-        /// </summary>
-        private void AddFoodBag()
-        {
-            this.foodStock = Math.Min(this.foodStock + this.bagSize, this.maxFoodStock);
-        }
-
-        /// <summary>
-        /// Returns a value indicating whether or not the vending machine is full.
-        /// </summary>
-        /// <returns>A value indicating whether or not the vending machine is full.</returns>
-        private bool IsFull()
-        {
-            return this.foodStock >= this.maxFoodStock;
         }
     }
 }

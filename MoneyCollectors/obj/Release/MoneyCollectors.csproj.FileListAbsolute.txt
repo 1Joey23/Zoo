@@ -1,6 +1,0 @@
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\MoneyCollectors\bin\Release\MoneyCollectors.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\MoneyCollectors\bin\Release\MoneyCollectors.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\MoneyCollectors\obj\Release\MoneyCollectors.csproj.AssemblyReference.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\MoneyCollectors\obj\Release\MoneyCollectors.csproj.CoreCompileInputs.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\MoneyCollectors\obj\Release\MoneyCollectors.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\MoneyCollectors\obj\Release\MoneyCollectors.pdb

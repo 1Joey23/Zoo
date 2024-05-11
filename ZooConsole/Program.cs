@@ -1,134 +1,262 @@
 ﻿using System;
-using Zoos;
+using System.Linq;
+using System.Runtime.CompilerServices;
 using Animals;
 using People;
-using System.Runtime.CompilerServices;
+using Zoos;
 
 namespace ZooConsole
 {
+    /// <summary>
+    /// Contains interaction logic for the console application.
+    /// </summary>
     public class Program
     {
+        /// <summary>
+        /// Minnesota's Como Zoo.
+        /// </summary>
         private static Zoo zoo;
 
+        /// <summary>
+        /// The program's main (start-up) method.
+        /// </summary>
+        /// <param name="args">The method arguments for the console application.</param>
         public static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the Como Zoo!");
+            // Set window title.
             Console.Title = "Object-Oriented Programming 2: Zoo";
 
-            bool bContinue = true;
-            zoo = Zoo.NewZoo();
-            while (bContinue)
+            // Write introductory message.
+            Console.WriteLine("Welcome to the Como Zoo!");
+
+            // Create zoo instance.
+             zoo = Zoo.NewZoo();
+            ConsoleHelper.AttachDelegates(zoo);
+
+            bool exit = false;
+
+            string command;
+
+            try
             {
-                string command = string.Empty;
-                Console.Write("] ");
-                command = Console.ReadLine();
-
-                command = command.ToLower().Trim();
-                string[] commandWords = command.Split();
-
-                
-
-                switch (commandWords[0])
+                while (!exit)
                 {
-                    case "exit":
-                        bContinue = false;
-                        break;
+                    Console.Write("] ");
+                    command = Console.ReadLine();
+                    string[] commandWords = command.ToLower().Trim().Split();
 
-                    case "restart":
-                        zoo = Zoo.NewZoo();
-                        zoo.BirthingRoomTemperature = 77.0;
-                        Console.WriteLine("A new Como Zoo has been created.");
-                        break;
+                    switch (commandWords[0])
+                    {
+                        case "exit":
+                            exit = true;
+                            break;
+                        case "restart":
+                            zoo = Zoo.NewZoo();
+                            ConsoleHelper.AttachDelegates(zoo);
+                            Console.WriteLine("A new Como Zoo has been created.");
+                            break;
+                        case "help":
+                            if (commandWords.Length == 1)
+                            {
+                                ConsoleHelper.ShowHelp();
+                            }
+                            else if (commandWords.Length == 2)
+                            {
+                                ConsoleHelper.ShowHelpDetail(commandWords[1]);
+                            }
+                            else
+                            {
+                                Console.WriteLine("Too many parameters were entered. The help command takes 1 or 2 parameters.");
+                            }
 
-                    case "help":
-                        Console.WriteLine("Known commands:\nHELP: Shows a list of known commands." +
-                            "\nEXIT: Exits the application.\nRESTART: Creates the ComoZoo. " +
-                            "\nTEMP: Sets birthingroom temp. " +
-                            "\nSHOW ANIMAL [animal name]: Displays information for specified animal." +
-                            "\nSHOW GUEST [guest name]: Displays information for specified guest." +
-                            "\nADD ANIMAL: Adds an animal to the zoo." +
-                            "\nADD GUEST: Adds a guest to the zoo." +
-                            "\nREMOVE ANIMAL [animal name]: Removes the specified animal from the zoo." +
-                            "\nREMOVE GUEST [guest name]: Removes the specified guest from the zoo.");
-                        break;
+                            break;
+                        case "temp":
+                            try
+                            {
+                                ConsoleHelper.SetTemperature(zoo, commandWords[1]);
+                            }
+                            catch (IndexOutOfRangeException)
+                            {
+                                Console.WriteLine("Please enter a parameter for temperature.");
+                            }
 
-                    case "temp":
-                        
-                        try
-                        {
-                            ConsoleHelper.SetTemperature(zoo, commandWords[1]);
-                        }
-                        catch (ArgumentOutOfRangeException ex)
-                        {
-                            Console.WriteLine(ex.Message);
-                        }
-                        catch (FormatException)
-                        {
-                            Console.WriteLine("Please enter numerical digets for the temperature. (i.e. 10)");
-                        }
-                        catch (IndexOutOfRangeException)
-                        {
-                            Console.WriteLine("A numerical temperature must be entered for command to work.(i.e. temp 10)");
-                        }
+                            break;
+                        case "show":
+                            try
+                            {
+                                ConsoleHelper.ProcessShowCommand(zoo, commandWords[1], commandWords[2]);
+                            }
+                            catch (IndexOutOfRangeException)
+                            {
+                                Console.WriteLine("Please enter the parameters [animal or guest] [name].");
+                            }
 
-                        break;
+                            break;
+                        case "remove":
+                            try
+                            {
+                                ConsoleHelper.ProcessRemoveCommand(zoo, commandWords[1], commandWords[2]);
+                            }
+                            catch (IndexOutOfRangeException)
+                            {
+                                Console.WriteLine("Please enter the parameters [animal or guest] [name].");
+                            }
 
-                    case "show":
-                        try
-                        {
-                            ConsoleHelper.ProcessShowCommand(zoo, commandWords[1], commandWords[2]);
-                        }
-                        catch (ArgumentOutOfRangeException ex)
-                        {
-                            Console.WriteLine(ex.Message);
-                        }
-                        catch (FormatException)
-                        {
-                            Console.WriteLine("Please enter alphabetical characters for the show method.. (i.e. show Animal name)");
-                        }
-                        catch (IndexOutOfRangeException)
-                        {
-                            Console.WriteLine("A valid type must be entered for command to work.(i.e. show Animal name)");
-                        }
+                            break;
+                        case "add":
+                            try
+                            {
+                                ConsoleHelper.ProcessAddCommand(zoo, commandWords[1]);
+                            }
+                            catch (IndexOutOfRangeException)
+                            {
+                                Console.WriteLine("Please enter the parameters [animal or guest].");
+                            }
+                            catch (NullReferenceException)
+                            {
+                                Console.WriteLine("Zoo is out of tickets.");
+                            }
 
-                        break;
+                            break;
+                        case "sort":
+                            try
+                            {
+                                if (commandWords[1] == "animals")
+                                {
+                                    SortResult result = zoo.SortAnimals(commandWords[2], commandWords[3], commandWords[1], zoo.Animals.ToList());
+                                    Console.WriteLine("SORT TYPE: " + commandWords[2].ToUpper());
+                                    Console.WriteLine("SORT BY: " + commandWords[1].ToUpper());
+                                    Console.WriteLine("SORT VALUE: " + commandWords[3].ToUpper());
+                                
+                                    Console.WriteLine("COMPARE COUNT: " + result.CompareCount);
+                                    Console.WriteLine("SWAP COUNT: " + result.SwapCount);
 
-                    case "add":
-                        try
-                        {
-                            ConsoleHelper.ProcessAddCommand(zoo, commandWords[1]);
-                        }
-                        catch (NullReferenceException ex)
-                        {
-                            throw new NullReferenceException(ex.Message);
-                        }
-                        break;
+                                    // Console.WriteLine("TIME: " + result.ElapsedMilliseconds);
+                                    foreach (Animal a in result.Objects)
+                                    {
+                                        Console.WriteLine(a.ToString());
+                                    }
+                                }
+                                else if (commandWords[1] == "guests")
+                                {
+                                    SortResult result = zoo.SortGuests(commandWords[2], commandWords[3], commandWords[1], zoo.Guests.ToList());
+                                    Console.WriteLine("SORT TYPE: " + commandWords[2].ToUpper());
+                                    Console.WriteLine("SORT BY: " + commandWords[1].ToUpper());
+                                    Console.WriteLine("SORT VALUE: " + commandWords[3].ToUpper());
 
-                    case "remove":
-                        ConsoleHelper.ProcessRemoveCommand(zoo, commandWords[1], commandWords[2]);
-                        break;
+                                    Console.WriteLine("COMPARE COUNT: " + result.CompareCount);
+                                    Console.WriteLine("SWAP COUNT: " + result.SwapCount);
 
-                    default:
-                        Console.WriteLine("Invalid command.");
-                        break;
+                                    // Console.WriteLine("TIME: " + result.ElapsedMilliseconds);
+                                    foreach (Guest g in result.Objects)
+                                    {
+                                        Console.WriteLine(g.ToString());
+                                    }
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine("Sort command must be entered as: sort [sort type] [list to sort, either animals or guests]." + ex.Message);
+                            }
+
+                            break;
+                        case "search":
+                           if (commandWords[1] == "linear")
+                            {
+                                int loopCount = 0;                          
+                                SortResult animals = zoo.SortObjects("bubble", "name", "animal", zoo.Animals.ToList());
+                                string animalName = ConsoleUtil.InitialUpper(commandWords[2]);
+
+                                if (!string.IsNullOrWhiteSpace(animalName))
+                                {
+                                    foreach (Animal a in animals.Objects)
+                                    {
+                                        loopCount++;
+                                        if (a.Name == animalName)
+                                        {
+                                            Console.WriteLine(string.Format($"{a.Name} found. {loopCount} loops complete."));
+                                            break;
+                                        }
+                                    }
+                                }
+                            }
+                            else if (commandWords[1] == "binary")
+                            {
+                                int loopCount = 0;
+
+                                string animalName = ConsoleUtil.InitialUpper(commandWords[2]);
+                                SortResult animals = zoo.SortObjects("bubble", "name", "animal", zoo.Animals.ToList());
+
+                                if (!string.IsNullOrWhiteSpace(animalName))
+                                {
+                                    int minPosition = 0;
+                                    int maxPosition = animals.Objects.Count - 1;
+
+                                    while (minPosition <= maxPosition)
+                                    {
+                                        int middlePosition = (minPosition + maxPosition) / 2;
+
+                                        loopCount++;
+                                        int comparer = string.Compare(animalName, ((Animal)animals.Objects[middlePosition]).Name);
+
+                                        if (comparer > 0)
+                                        {
+                                            minPosition = middlePosition + 1;
+                                        }
+                                        else if (comparer < 0)
+                                        {
+                                            maxPosition = middlePosition - 1;
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine(string.Format("{0} found. {1} loops complete.", ((Animal)animals.Objects[middlePosition]).Name, loopCount));
+                                            break;
+                                        }
+                                    }
+                                }
+                            }
+
+                            break;
+                        case "save":
+                            try
+                            {
+                                ConsoleHelper.SaveFile(zoo, commandWords[1]);
+                            }
+                            catch
+                            {
+                                Console.WriteLine("Please enter a name for the file you wish to save.");
+                            }
+
+                            break;
+                        case "load":
+                            try
+                            {
+                                zoo = ConsoleHelper.LoadFile(commandWords[1]);
+                                ConsoleHelper.AttachDelegates(zoo);
+                            }
+                            catch
+                            {
+                                Console.WriteLine("Please enter the file name you wish to load.");
+                            }
+
+                            break;
+                        case "query":
+                            string query = ConsoleHelper.QueryHelper(zoo, commandWords[1]);
+                            Console.WriteLine(query);
+
+                            break;
+
+                        default:
+                            Console.WriteLine("Invalid command entered.");
+
+                            break;
+                    }
                 }
             }
-        }
-
-        /// <summary>
-        /// Converts all input names to proper capitalized words.
-        /// </summary>
-        /// <returns>The capitalized word.</returns>
-        public static string InitialUpper(string value)
-        {
-            if (value != null && value.Length > 0)
-            value = char.ToUpper(value[0]) + value.Substring(1);
-
-            else
+            catch (Exception ex)
             {
-                throw new Exception("Word character length must be greater than 0");
+                Console.WriteLine(ex.Message);
             }
-            return value;
         }
     }
 }

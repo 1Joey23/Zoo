@@ -1,113 +1,125 @@
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\BirthingRooms\bin\Debug\BirthingRooms.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\BirthingRooms\bin\Debug\BirthingRooms.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\BirthingRooms\bin\Debug\People.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\BirthingRooms\bin\Debug\Reproducers.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\BirthingRooms\bin\Debug\BoothItems.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\BirthingRooms\bin\Debug\Foods.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\BirthingRooms\bin\Debug\VendingMachines.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\BirthingRooms\bin\Debug\Animals.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\BirthingRooms\bin\Debug\People.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\BirthingRooms\bin\Debug\Reproducers.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\BirthingRooms\bin\Debug\BoothItems.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\BirthingRooms\bin\Debug\Foods.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\BirthingRooms\bin\Debug\VendingMachines.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\BirthingRooms\bin\Debug\Animals.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.AssemblyReference.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.CoreCompileInputs.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.CopyComplete
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\BirthingRooms\obj\Debug\BirthingRooms.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\BirthingRooms\obj\Debug\BirthingRooms.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\BirthingRooms\bin\Debug\MoneyCollectors.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\BirthingRooms\bin\Debug\MoneyCollectors.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\BirthingRooms\bin\Debug\BirthingRooms.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\BirthingRooms\bin\Debug\BirthingRooms.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\BirthingRooms\bin\Debug\People.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\BirthingRooms\bin\Debug\Reproducers.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\BirthingRooms\bin\Debug\MoneyCollectors.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\BirthingRooms\bin\Debug\BoothItems.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\BirthingRooms\bin\Debug\Foods.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\BirthingRooms\bin\Debug\VendingMachines.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\BirthingRooms\bin\Debug\Animals.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\BirthingRooms\bin\Debug\People.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\BirthingRooms\bin\Debug\Reproducers.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\BirthingRooms\bin\Debug\MoneyCollectors.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\BirthingRooms\bin\Debug\BoothItems.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\BirthingRooms\bin\Debug\Foods.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\BirthingRooms\bin\Debug\VendingMachines.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\BirthingRooms\bin\Debug\Animals.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.AssemblyReference.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.CoreCompileInputs.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.CopyComplete
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\BirthingRooms\obj\Debug\BirthingRooms.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\BirthingRooms\obj\Debug\BirthingRooms.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\BirthingRooms\bin\Debug\BirthingRooms.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\BirthingRooms\bin\Debug\BirthingRooms.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\BirthingRooms\bin\Debug\People.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\BirthingRooms\bin\Debug\Reproducers.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\BirthingRooms\bin\Debug\MoneyCollectors.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\BirthingRooms\bin\Debug\BoothItems.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\BirthingRooms\bin\Debug\Foods.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\BirthingRooms\bin\Debug\VendingMachines.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\BirthingRooms\bin\Debug\Animals.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\BirthingRooms\bin\Debug\People.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\BirthingRooms\bin\Debug\Reproducers.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\BirthingRooms\bin\Debug\MoneyCollectors.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\BirthingRooms\bin\Debug\BoothItems.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\BirthingRooms\bin\Debug\Foods.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\BirthingRooms\bin\Debug\VendingMachines.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\BirthingRooms\bin\Debug\Animals.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.AssemblyReference.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.CoreCompileInputs.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.CopyComplete
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\BirthingRooms\obj\Debug\BirthingRooms.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\BirthingRooms\obj\Debug\BirthingRooms.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\BirthingRooms.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\BirthingRooms.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\People.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\Reproducers.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\MoneyCollectors.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\BoothItems.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\Foods.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\VendingMachines.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\Animals.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\People.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\Reproducers.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\MoneyCollectors.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\BoothItems.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\Foods.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\VendingMachines.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\Animals.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.AssemblyReference.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.CoreCompileInputs.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.CopyComplete
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\obj\Debug\BirthingRooms.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\obj\Debug\BirthingRooms.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\bin\Debug\BirthingRooms.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\bin\Debug\BirthingRooms.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\bin\Debug\People.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\bin\Debug\Reproducers.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\bin\Debug\MoneyCollectors.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\bin\Debug\BoothItems.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\bin\Debug\Foods.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\bin\Debug\VendingMachines.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\bin\Debug\Animals.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\bin\Debug\CagedItems.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\bin\Debug\Utilities.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\bin\Debug\People.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\bin\Debug\Reproducers.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\bin\Debug\MoneyCollectors.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\bin\Debug\BoothItems.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\bin\Debug\Foods.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\bin\Debug\VendingMachines.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\bin\Debug\Animals.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\bin\Debug\CagedItems.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\bin\Debug\Utilities.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\obj\Debug\BirthingRooms.csproj.AssemblyReference.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\obj\Debug\BirthingRooms.csproj.CoreCompileInputs.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\obj\Debug\BirthingRooms.csproj.CopyComplete
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\obj\Debug\BirthingRooms.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\BirthingRooms\obj\Debug\BirthingRooms.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\CagedItems.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\Utilities.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\CagedItems.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\BirthingRooms\bin\Debug\Utilities.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\bin\Debug\BirthingRooms.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\bin\Debug\BirthingRooms.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\bin\Debug\People.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\bin\Debug\Reproducers.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\bin\Debug\BoothItems.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\bin\Debug\Foods.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\bin\Debug\CagedItems.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\bin\Debug\MoneyCollectors.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\bin\Debug\Animals.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\bin\Debug\Utilities.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\bin\Debug\VendingMachines.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\bin\Debug\People.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\bin\Debug\Reproducers.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\bin\Debug\BoothItems.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\bin\Debug\Foods.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\bin\Debug\CagedItems.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\bin\Debug\MoneyCollectors.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\bin\Debug\Animals.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\bin\Debug\Utilities.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\bin\Debug\VendingMachines.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\obj\Debug\BirthingRooms.csproj.AssemblyReference.cache
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\obj\Debug\BirthingRooms.csproj.CoreCompileInputs.cache
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\obj\Debug\BirthingRooms.csproj.CopyComplete
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\obj\Debug\BirthingRooms.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\BirthingRooms\obj\Debug\BirthingRooms.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\bin\Debug\BirthingRooms.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\bin\Debug\BirthingRooms.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\bin\Debug\People.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\bin\Debug\Reproducers.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\bin\Debug\BoothItems.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\bin\Debug\Foods.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\bin\Debug\CagedItems.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\bin\Debug\MoneyCollectors.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\bin\Debug\Animals.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\bin\Debug\Utilities.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\bin\Debug\VendingMachines.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\bin\Debug\People.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\bin\Debug\Reproducers.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\bin\Debug\BoothItems.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\bin\Debug\Foods.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\bin\Debug\CagedItems.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\bin\Debug\MoneyCollectors.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\bin\Debug\Animals.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\bin\Debug\Utilities.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\bin\Debug\VendingMachines.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.AssemblyReference.cache
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.CoreCompileInputs.cache
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.CopyComplete
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\obj\Debug\BirthingRooms.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\BirthingRooms\obj\Debug\BirthingRooms.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\bin\Debug\BirthingRooms.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\bin\Debug\BirthingRooms.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\bin\Debug\People.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\bin\Debug\Reproducers.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\bin\Debug\BoothItems.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\bin\Debug\Foods.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\bin\Debug\CagedItems.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\bin\Debug\MoneyCollectors.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\bin\Debug\Animals.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\bin\Debug\Utilities.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\bin\Debug\VendingMachines.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\bin\Debug\People.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\bin\Debug\Reproducers.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\bin\Debug\BoothItems.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\bin\Debug\Foods.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\bin\Debug\CagedItems.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\bin\Debug\MoneyCollectors.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\bin\Debug\Animals.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\bin\Debug\Utilities.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\bin\Debug\VendingMachines.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.AssemblyReference.cache
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.CoreCompileInputs.cache
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.CopyComplete
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\obj\Debug\BirthingRooms.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\BirthingRooms\obj\Debug\BirthingRooms.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\bin\Debug\BirthingRooms.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\bin\Debug\BirthingRooms.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\bin\Debug\People.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\bin\Debug\Reproducers.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\bin\Debug\BoothItems.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\bin\Debug\Foods.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\bin\Debug\CagedItems.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\bin\Debug\MoneyCollectors.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\bin\Debug\Animals.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\bin\Debug\Utilities.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\bin\Debug\VendingMachines.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\bin\Debug\People.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\bin\Debug\Reproducers.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\bin\Debug\BoothItems.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\bin\Debug\Foods.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\bin\Debug\CagedItems.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\bin\Debug\MoneyCollectors.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\bin\Debug\Animals.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\bin\Debug\Utilities.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\bin\Debug\VendingMachines.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.AssemblyReference.cache
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.CoreCompileInputs.cache
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.CopyComplete
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\obj\Debug\BirthingRooms.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\BirthingRooms\obj\Debug\BirthingRooms.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\bin\Debug\BirthingRooms.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\bin\Debug\BirthingRooms.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\bin\Debug\People.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\bin\Debug\Reproducers.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\bin\Debug\BoothItems.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\bin\Debug\Foods.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\bin\Debug\CagedItems.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\bin\Debug\MoneyCollectors.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\bin\Debug\Animals.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\bin\Debug\Utilities.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\bin\Debug\VendingMachines.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\bin\Debug\People.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\bin\Debug\Reproducers.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\bin\Debug\BoothItems.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\bin\Debug\Foods.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\bin\Debug\CagedItems.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\bin\Debug\MoneyCollectors.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\bin\Debug\Animals.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\bin\Debug\Utilities.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\bin\Debug\VendingMachines.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.AssemblyReference.cache
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.CoreCompileInputs.cache
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\obj\Debug\BirthingRooms.csproj.CopyComplete
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\obj\Debug\BirthingRooms.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\BirthingRooms\obj\Debug\BirthingRooms.pdb

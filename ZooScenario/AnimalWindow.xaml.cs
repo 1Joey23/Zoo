@@ -1,115 +1,137 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using Animals;
 using Reproducers;
 
 namespace ZooScenario
 {
     /// <summary>
-    /// Interaction logic for AnimalWindow.xaml
+    /// Interaction logic for AnimalWindow.xaml.
     /// </summary>
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.StyleCop.CSharp.NamingRules", "SA1300:ElementMustBeginWithUpperCaseLetter", Justification = "Event handlers may begin with lower-case letters.")]
     public partial class AnimalWindow : Window
     {
+        /// <summary>
+        /// The animal with which to interact.
+        /// </summary>
         private Animal animal;
+
+        /// <summary>
+        /// Initializes a new instance of the AnimalWindow class.
+        /// </summary>
+        /// <param name="animal">The animal with which to interact.</param>
         public AnimalWindow(Animal animal)
         {
-            try 
-            { 
-                InitializeComponent();
-                this.animal = animal;
-            }
-            catch (Exception ex) 
-            {
-                MessageBox.Show(ex.Message);
-            }
-            
+            this.animal = animal;
+            this.InitializeComponent();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            this.pregnancyStatusLabel.Content = this.animal.IsPregnant ? "Yes" : "No";
-            this.nameTextBox.Text = this.animal.Name;
-            this.genderComboBox.ItemsSource = Enum.GetValues(typeof(Gender));
-            this.ageTextBox.Text = this.animal.Age.ToString();
-            this.weightTextBox.Text = this.animal.Weight.ToString();
-        }
-
-        private void okButton_Click(object sender, RoutedEventArgs e)
-        {
-            DialogResult = true;
-        }
-
-        private void nameTextBox_LostFocus(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                animal.Name = this.nameTextBox.Text;
-                this.okButton.IsEnabled = true;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                this.okButton.IsEnabled = false;
-            }
-        }
-
+        /// <summary>
+        /// Sets the animal's age.
+        /// </summary>
+        /// <param name="sender">The object that initiated the event.</param>
+        /// <param name="e">The arguments of the event.</param>
         private void ageTextBox_LostFocus(object sender, RoutedEventArgs e)
         {
             try
             {
-                animal.Age = int.Parse(this.ageTextBox.Text);
-                this.okButton.IsEnabled = true;
+                this.animal.Age = int.Parse(this.ageTextBox.Text);
             }
-            catch (Exception ex)
+            catch (ArgumentOutOfRangeException ex)
             {
                 MessageBox.Show(ex.Message);
-                this.okButton.IsEnabled = false;
             }
         }
 
+        /// <summary>
+        /// Sets the animal's gender.
+        /// </summary>
+        /// <param name="sender">The object that initiated the event.</param>
+        /// <param name="e">The arguments of the event.</param>
+        private void genderComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            this.animal.Gender = (Gender)this.genderComboBox.SelectedItem;
+            if (this.animal.Gender == Gender.Male)
+            {
+                this.makePregnantButton.IsEnabled = false;
+            }
+            else
+            {
+                this.makePregnantButton.IsEnabled = true;
+            }
+        }
+
+        /// <summary>
+        /// Sets the animal's pregnancy status.
+        /// </summary>
+        /// <param name="sender">The object that initiated the event.</param>
+        /// <param name="e">The arguments of the event.</param>
+        private void makePregnantButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.animal.MakePregnant();
+            this.makePregnantButton.IsEnabled = false;
+            this.pregnancyStatusLabel.Content = "Yes";
+        }
+
+        /// <summary>
+        /// Sets the animal's name.
+        /// </summary>
+        /// <param name="sender">The object that initiated the event.</param>
+        /// <param name="e">The arguments of the event.</param>
+        private void nameTextBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                this.animal.Name = this.nameTextBox.Text;
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// Sets the dialog result to true.
+        /// </summary>
+        /// <param name="sender">The object that initiated the event.</param>
+        /// <param name="e">The arguments of the event.</param>
+        private void okButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.DialogResult = true;
+        }
+
+        /// <summary>
+        /// Sets the animal's weight.
+        /// </summary>
+        /// <param name="sender">The object that initiated the event.</param>
+        /// <param name="e">The arguments of the event.</param>
         private void weightTextBox_LostFocus(object sender, RoutedEventArgs e)
         {
             try
             {
-                animal.Weight = double.Parse(this.weightTextBox.Text);
-                this.okButton.IsEnabled = true;
+                this.animal.Weight = double.Parse(this.weightTextBox.Text);
             }
-            catch (Exception ex)
+            catch (ArgumentOutOfRangeException ex)
             {
                 MessageBox.Show(ex.Message);
-                this.okButton.IsEnabled = false;
             }
         }
 
-        private void genderComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        /// <summary>
+        /// Initializes the windows controls.
+        /// </summary>
+        /// <param name="sender">The object that initiated the event.</param>
+        /// <param name="e">The arguments of the event.</param>
+        private void window_Loaded(object sender, RoutedEventArgs e)
         {
-            Gender gender = (Gender)this.genderComboBox.SelectedItem;
-            animal.Gender = gender;
-        }
-
-        private void makePregnantButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (animal.Gender == Gender.Female)
-            {
-                animal.MakePregnant();
-                if (animal.IsPregnant == true)
-                {
-                    this.makePregnantButton.IsEnabled = false;
-                    this.pregnancyStatusLabel.Content = "Yes";
-                }
-            }
+            this.genderComboBox.ItemsSource = Enum.GetValues(typeof(Gender));
+            this.nameTextBox.Text = this.animal.Name;
+            this.genderComboBox.SelectedItem = this.animal.Gender;
+            this.ageTextBox.Text = this.animal.Age.ToString();
+            this.weightTextBox.Text = this.animal.Weight.ToString();
+            this.pregnancyStatusLabel.Content = this.animal.IsPregnant ? "Yes" : "No";
         }
     }
 }

@@ -1,39 +1,35 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BoothItems
 {
     /// <summary>
-    /// Class for booth items being sold.
+    /// The class which is used to represent an item.
     /// </summary>
+    [Serializable]
     public abstract class Item
     {
         /// <summary>
-        /// weight of the items
+        /// The weight of the item.
         /// </summary>
         private double weight;
 
         /// <summary>
-        /// item constructor
+        /// Initializes a new instance of the Item class.
         /// </summary>
-        /// <param name="price">the price of the item</param>
-        /// <param name="weight">the weight of the item</param>
+        /// <param name="weight">The weight of the item.</param>
         public Item(double weight)
         {
             this.weight = weight;
         }
 
         /// <summary>
-        /// the weight getter
+        /// Gets the weight of the item.
         /// </summary>
         public double Weight
         {
-            get 
+            get
             {
-                return weight;
+                return this.weight;
             }
         }
     }

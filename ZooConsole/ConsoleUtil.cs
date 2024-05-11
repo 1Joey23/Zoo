@@ -1,89 +1,66 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using Animals;
 using People;
 using Reproducers;
+using Utilities;
+using Zoos;
 
 namespace ZooConsole
 {
+    /// <summary>
+    /// The class that provides utility functions for the console application.
+    /// </summary>
     internal static class ConsoleUtil
     {
         /// <summary>
-        /// Converts all input names to proper capitalized words.
+        /// Capitalizes the first letter of a string.
         /// </summary>
-        /// <returns>The capitalized word.</returns>
+        /// <param name="value">The string to uppercase.</param>
+        /// <returns>The string with the first letter uppercased.</returns>
         public static string InitialUpper(string value)
         {
-            if (value != null && value.Length > 0)
-                value = char.ToUpper(value[0]) + value.Substring(1);
-
-            else
-            {
-                throw new Exception("Word character length must be greater than 0");
-            }
-            return value;
+            return value != null && value.Length > 0 ? char.ToUpper(value[0]) + value.Substring(1) : null;
         }
 
-        public static AnimalType ReadAnimalType()
+        /// <summary>
+        /// Reads a string value from the console.
+        /// </summary>
+        /// <param name="prompt">A value to display as an input prompt to the console.</param>
+        /// <returns>The string which was read from the console.</returns>
+        public static string ReadStringValue(string prompt)
         {
-            AnimalType result = AnimalType.Eagle;
-
-            string stringValue = result.ToString();
+            string result = null;
 
             bool found = false;
 
             while (!found)
             {
-                stringValue = ConsoleUtil.ReadAlphabeticValue("Animal");
+                Console.Write(prompt + "\n] ");
 
-                stringValue = ConsoleUtil.InitialUpper(stringValue);
+                string stringValue = Console.ReadLine().ToLower().Trim();
 
-                // If a matching enumerated value can be found...
-                if (Enum.TryParse<AnimalType>(stringValue, out result))
+                if (stringValue != string.Empty)
                 {
+                    result = stringValue;
                     found = true;
                 }
                 else
                 {
-                    Console.WriteLine("Invalid Animal Type.");
+                    Console.WriteLine(prompt + " must have a value.");
                 }
             }
 
             return result;
         }
 
-        public static WalletColor ReadWalletColor()
-        {
-            WalletColor result = WalletColor.Brown;
-
-            string stringValue = result.ToString();
-
-            bool found = false;
-
-            while (!found)
-            {
-                stringValue = ConsoleUtil.ReadAlphabeticValue("Wallet Color");
-
-                stringValue = ConsoleUtil.InitialUpper(stringValue);
-
-                // If a matching enumerated value can be found...
-                if (Enum.TryParse<WalletColor>(stringValue, out result))
-                {
-                    found = true;
-                }
-                else
-                {
-                    Console.WriteLine("Invalid Wallet Color.");
-                }
-            }
-
-            return result;
-        }
-
+        /// <summary>
+        /// Reads an alphabetic value from the console.
+        /// </summary>
+        /// <param name="prompt">The prompt to show in the console command.</param>
+        /// <returns>The entered string value.</returns>
         public static string ReadAlphabeticValue(string prompt)
         {
             string result = null;
@@ -107,9 +84,44 @@ namespace ZooConsole
             return result;
         }
 
+        /// <summary>
+        /// Reads an integer value from the console.
+        /// </summary>
+        /// <param name="prompt">The text to display before the prompt.</param>
+        /// <returns>A value indicating whether or not the out value is being returned successfully.</returns>
+        public static int ReadIntValue(string prompt)
+        {
+            int result = 0;
+
+            string stringValue = result.ToString();
+
+            bool found = false;
+
+            while (!found)
+            {
+                stringValue = ConsoleUtil.ReadStringValue(prompt);
+
+                if (int.TryParse(stringValue, out result))
+                {
+                    found = true;
+                }
+                else
+                {
+                    Console.WriteLine(prompt + " must be a whole number.");
+                }
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// Reads an integer value from the console.
+        /// </summary>
+        /// <param name="prompt">The text to display before the prompt.</param>
+        /// <returns>A value indicating whether or not the out value is being returned successfully.</returns>
         public static double ReadDoubleValue(string prompt)
         {
-            double result = 0;
+            double result = 0.0;
 
             string stringValue = result.ToString();
 
@@ -132,6 +144,10 @@ namespace ZooConsole
             return result;
         }
 
+        /// <summary>
+        /// Reads a gender from console.
+        /// </summary>
+        /// <returns>The gender that matches the string input.</returns>
         public static Gender ReadGender()
         {
             Gender result = Gender.Female;
@@ -160,9 +176,13 @@ namespace ZooConsole
             return result;
         }
 
-        public static int ReadIntValue(string prompt)
+        /// <summary>
+        /// Reads a wallet color from console.
+        /// </summary>
+        /// <returns>The wallet color that matches the string input.</returns>
+        public static WalletColor ReadWalletColor()
         {
-            int result = 0;
+            WalletColor result = WalletColor.Black;
 
             string stringValue = result.ToString();
 
@@ -170,47 +190,103 @@ namespace ZooConsole
 
             while (!found)
             {
-                stringValue = ConsoleUtil.ReadStringValue(prompt);
+                stringValue = ConsoleUtil.ReadAlphabeticValue("Wallet color");
 
-                if (int.TryParse(stringValue, out result))
+                stringValue = ConsoleUtil.InitialUpper(stringValue);
+
+                // If a matching enumerated value can be found...
+                if (Enum.TryParse<WalletColor>(stringValue, out result))
                 {
                     found = true;
                 }
                 else
                 {
-                    Console.WriteLine(prompt + " must be a whole number.");
+                    Console.WriteLine("Invalid wallet color.");
                 }
             }
 
             return result;
         }
 
-        public static string ReadStringValue(string prompt)
+        /// <summary>
+        /// Reads an animal type from console.
+        /// </summary>
+        /// <returns>The animal type that matches the string input.</returns>
+        public static AnimalType ReadAnimalType()
         {
-            string result = null;
+            AnimalType result = AnimalType.Chimpanzee;
+
+            string stringValue = result.ToString();
 
             bool found = false;
 
             while (!found)
             {
-                Console.Write(prompt + "] ");
+                stringValue = ConsoleUtil.ReadAlphabeticValue("Animal type");
 
-                string stringValue = Console.ReadLine().ToLower().Trim();
+                stringValue = ConsoleUtil.InitialUpper(stringValue);
 
-                Console.WriteLine();
-
-                if (stringValue != string.Empty)
+                // If a matching enumerated value can be found...
+                if (Enum.TryParse<AnimalType>(stringValue, out result))
                 {
-                    result = stringValue;
                     found = true;
                 }
                 else
                 {
-                    Console.WriteLine(prompt + " must have a value.");
+                    Console.WriteLine("Invalid animal type.");
                 }
             }
 
             return result;
+        }
+
+        /// <summary>
+        /// Writes help detail for a console command which takes multiple arguments.
+        /// </summary>
+        /// <param name="command">The command to write help detail for.</param>
+        /// <param name="overview">An overview of the command.</param>
+        /// <param name="arguments">A dictionary of each of the arguments and their descriptions.</param>
+        public static void WriteHelpDetail(string command, string overview, Dictionary<string, string> arguments)
+        {
+            string upperCommand = command.ToUpper();
+            Console.WriteLine("Command name: " + upperCommand);
+            Console.WriteLine("Overview: " + overview);
+
+            if (arguments != null)
+            {
+                Console.WriteLine($"Usage: {upperCommand} {arguments.Keys.Flatten(" ")}");
+
+                Console.WriteLine("Parameters:");
+
+                /*foreach (KeyValuePair<string, string> kvp in arguments)
+                {
+                    Console.WriteLine($"{kvp.Key}: {kvp.Value}");
+                }*/
+
+                arguments.ToList().ForEach(kvp => Console.WriteLine($"{kvp.Key}: {kvp.Value}"));
+            }
+        }
+
+        /// <summary>
+        /// Writes help detail for a console command which takes a single argument.
+        /// </summary>
+        /// <param name="command">The command to write help detail for.</param>
+        /// <param name="overview">An overview of the command.</param>
+        /// <param name="argument">The command's argument.</param>
+        /// <param name="argumentUsage">A dictionary of each of the arguments and their usage descriptions.</param>
+        public static void WriteHelpDetail(string command, string overview, string argument, string argumentUsage)
+        {
+            ConsoleUtil.WriteHelpDetail(command, overview, new Dictionary<string, string> { { argument, argumentUsage } });
+        }
+
+        /// <summary>
+        /// Writes help detail for a console command which takes no arguments.
+        /// </summary>
+        /// <param name="command">The command to write help detail for.</param>
+        /// <param name="overview">An overview of the command.</param>
+        public static void WriteHelpDetail(string command, string overview)
+        {
+            ConsoleUtil.WriteHelpDetail(command, overview, null);
         }
     }
 }

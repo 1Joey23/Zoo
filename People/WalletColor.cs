@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace People
+﻿namespace People
 {
+    /// <summary>
+    /// The enum that represents the wallet's colors.
+    /// </summary>
     public enum WalletColor
     {
         Black,

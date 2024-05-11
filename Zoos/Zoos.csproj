@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B9CB6E8B-EA4F-4F4D-B663-8447E9D02D63}</ProjectGuid>
+    <ProjectGuid>{9116E7A7-D531-4B54-A3DF-9552F4F06139}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Zoos</RootNamespace>
     <AssemblyName>Zoos</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,49 +43,60 @@
   <ItemGroup>
     <Compile Include="Cage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SortHelper.cs" />
+    <Compile Include="SortResult.cs" />
+    <Compile Include="SortType.cs" />
     <Compile Include="Zoo.cs" />
+    <Compile Include="ZooExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Accounts\Accounts.csproj">
-      <Project>{8547f40c-afab-4ed7-b3e8-7e7c6400f4e1}</Project>
+      <Project>{dd92848a-816d-4835-8f51-ce72bd5407db}</Project>
       <Name>Accounts</Name>
     </ProjectReference>
     <ProjectReference Include="..\Animals\Animals.csproj">
-      <Project>{7bace754-1eee-45ea-a30f-2fb3288f212f}</Project>
+      <Project>{ce73316d-b770-4638-a44e-5732a4182f4f}</Project>
       <Name>Animals</Name>
     </ProjectReference>
     <ProjectReference Include="..\BirthingRooms\BirthingRooms.csproj">
-      <Project>{26d16c95-ba19-4b45-8906-27a4aa0185a9}</Project>
+      <Project>{c1b52860-8b01-4800-973a-30ae80b7e507}</Project>
       <Name>BirthingRooms</Name>
     </ProjectReference>
     <ProjectReference Include="..\BoothItems\BoothItems.csproj">
-      <Project>{6740e2b0-ebbb-4494-a237-fb1e5bdb6b07}</Project>
+      <Project>{0115e053-5070-4a75-9566-f3c86b43d03d}</Project>
       <Name>BoothItems</Name>
     </ProjectReference>
     <ProjectReference Include="..\CagedItems\CagedItems.csproj">
-      <Project>{C686BD3C-0C39-4D01-9094-0816D1553933}</Project>
+      <Project>{311a1629-f6b5-4f9f-956d-3da0c82757ee}</Project>
       <Name>CagedItems</Name>
     </ProjectReference>
     <ProjectReference Include="..\Foods\Foods.csproj">
-      <Project>{ac8c3583-7543-494e-9d31-11959b3e4f55}</Project>
+      <Project>{6a2cf901-3c8d-4a75-a5da-7949cda8765a}</Project>
       <Name>Foods</Name>
     </ProjectReference>
     <ProjectReference Include="..\MoneyCollectors\MoneyCollectors.csproj">
-      <Project>{e594795e-389e-405b-9dda-fade3d870d79}</Project>
+      <Project>{1df4cea5-9e59-4be6-a00f-ee3cf3087c08}</Project>
       <Name>MoneyCollectors</Name>
     </ProjectReference>
     <ProjectReference Include="..\People\People.csproj">
-      <Project>{56f9e695-9c71-49f4-a4e2-df464b254173}</Project>
+      <Project>{aa1b7651-2f2c-4348-aa31-14fddcdbdc5a}</Project>
       <Name>People</Name>
     </ProjectReference>
     <ProjectReference Include="..\Reproducers\Reproducers.csproj">
-      <Project>{31a1844c-33a9-4351-802a-f3aa4c31cc5e}</Project>
+      <Project>{28bf9fc3-ea4a-49ad-a49c-fd8ca77174f4}</Project>
       <Name>Reproducers</Name>
     </ProjectReference>
     <ProjectReference Include="..\VendingMachines\VendingMachines.csproj">
-      <Project>{54d73b95-bd3f-4f43-aed3-387de16ea703}</Project>
+      <Project>{261ec534-ce38-4b28-9b11-b329b125e909}</Project>
       <Name>VendingMachines</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
 </Project>

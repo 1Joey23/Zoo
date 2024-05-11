@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7BACE754-1EEE-45EA-A30F-2FB3288F212F}</ProjectGuid>
+    <ProjectGuid>{CE73316D-B770-4638-A44E-5732A4182F4F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Animals</RootNamespace>
     <AssemblyName>Animals</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,50 +41,75 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animal.cs" />
-    <Compile Include="AnimalFactory.cs" />
-    <Compile Include="Animals\Bird.cs" />
+    <Compile Include="Abstract Animals\Animal.cs" />
+    <Compile Include="Abstract Animals\Bird.cs" />
+    <Compile Include="Abstract Animals\Fish.cs" />
+    <Compile Include="EatBehaviors\BuryAndEatBoneBehavior.cs" />
+    <Compile Include="EatBehaviors\ConsumeBehavior.cs" />
+    <Compile Include="Interfaces\IEatBehavior.cs" />
+    <Compile Include="EatBehaviors\ShowAffectionBehavior.cs" />
+    <Compile Include="Enumerations\ClimbProcess.cs" />
+    <Compile Include="Enumerations\HoverProcess.cs" />
+    <Compile Include="Enumerations\MoveBehaviorType.cs" />
+    <Compile Include="Factories\AnimalFactory.cs" />
     <Compile Include="Animals\Chimpanzee.cs" />
     <Compile Include="Animals\Dingo.cs" />
-    <Compile Include="Animals\Eagle.cs" />
-    <Compile Include="Animals\Fish.cs" />
+    <Compile Include="Animals\Eagle.cs">
+      <ExcludeFromStyleCop>False</ExcludeFromStyleCop>
+    </Compile>
     <Compile Include="Animals\Hummingbird.cs" />
     <Compile Include="Animals\Kangaroo.cs" />
-    <Compile Include="Animals\Mammal.cs" />
     <Compile Include="Animals\Ostrich.cs" />
-    <Compile Include="Animals\Platypus.cs" />
     <Compile Include="Animals\Shark.cs" />
     <Compile Include="Animals\Squirrel.cs" />
-    <Compile Include="AnimalType.cs" />
-    <Compile Include="IHatchable.cs" />
-    <Compile Include="IMover.cs" />
+    <Compile Include="MoveBehaviors\ClimbBehavior.cs" />
+    <Compile Include="MoveBehaviors\FlyBehavior.cs" />
+    <Compile Include="MoveBehaviors\HoverBehavior.cs" />
+    <Compile Include="Interfaces\IMoveBehavior.cs" />
+    <Compile Include="Interfaces\IHatchable.cs" />
+    <Compile Include="Interfaces\IMover.cs" />
+    <Compile Include="Abstract Animals\Mammal.cs" />
+    <Compile Include="Animals\Platypus.cs" />
+    <Compile Include="Enumerations\AnimalType.cs" />
+    <Compile Include="Factories\MoveBehaviorFactory.cs" />
+    <Compile Include="MoveBehaviors\MoveHelper.cs" />
+    <Compile Include="MoveBehaviors\NoMoveBehavior.cs" />
+    <Compile Include="MoveBehaviors\PaceBehavior.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MoveBehaviors\SwimBehavior.cs" />
+    <Compile Include="ReproduceBehaviors\GiveBirthBehavior.cs" />
+    <Compile Include="Interfaces\IReproduceBehavior.cs" />
+    <Compile Include="ReproduceBehaviors\LayEggBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Accounts\Accounts.csproj">
-      <Project>{8547f40c-afab-4ed7-b3e8-7e7c6400f4e1}</Project>
-      <Name>Accounts</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CagedItems\CagedItems.csproj">
-      <Project>{C686BD3C-0C39-4D01-9094-0816D1553933}</Project>
+      <Project>{311a1629-f6b5-4f9f-956d-3da0c82757ee}</Project>
       <Name>CagedItems</Name>
     </ProjectReference>
     <ProjectReference Include="..\Foods\Foods.csproj">
-      <Project>{ac8c3583-7543-494e-9d31-11959b3e4f55}</Project>
+      <Project>{6a2cf901-3c8d-4a75-a5da-7949cda8765a}</Project>
       <Name>Foods</Name>
     </ProjectReference>
     <ProjectReference Include="..\MoneyCollectors\MoneyCollectors.csproj">
-      <Project>{e594795e-389e-405b-9dda-fade3d870d79}</Project>
+      <Project>{1df4cea5-9e59-4be6-a00f-ee3cf3087c08}</Project>
       <Name>MoneyCollectors</Name>
     </ProjectReference>
     <ProjectReference Include="..\Reproducers\Reproducers.csproj">
-      <Project>{31a1844c-33a9-4351-802a-f3aa4c31cc5e}</Project>
+      <Project>{28bf9fc3-ea4a-49ad-a49c-fd8ca77174f4}</Project>
       <Name>Reproducers</Name>
     </ProjectReference>
     <ProjectReference Include="..\Utilities\Utilities.csproj">
-      <Project>{6C2BBBA5-7367-450E-AC92-5484A17F0EB9}</Project>
+      <Project>{afb7aa8c-157a-405d-8574-0355c1631e61}</Project>
       <Name>Utilities</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
 </Project>

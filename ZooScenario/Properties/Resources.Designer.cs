@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BirthingRooms.Properties {
+namespace ZooScenario.Properties {
     using System;
     
     

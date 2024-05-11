@@ -1,6 +1,0 @@
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\Reproducers\bin\Release\Reproducers.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\Reproducers\bin\Release\Reproducers.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\Reproducers\obj\Release\Reproducers.csproj.AssemblyReference.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\Reproducers\obj\Release\Reproducers.csproj.CoreCompileInputs.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\Reproducers\obj\Release\Reproducers.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\Reproducers\obj\Release\Reproducers.pdb

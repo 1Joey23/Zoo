@@ -1,38 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BoothItems
 {
     /// <summary>
-    /// The Items that cost money.
+    /// The class which is used to represent a sold item.
     /// </summary>
-    public class SoldItem : Item
+    [Serializable]
+    public abstract class SoldItem : Item
     {
         /// <summary>
-        /// Price of the sold item.
+        /// The price of the item.
         /// </summary>
         private decimal price;
 
         /// <summary>
-        /// Sold item constructor.
+        /// Initializes a new instance of the SoldItem class.
         /// </summary>
-        /// <param name="price">price of the sold item</param>
-        /// <param name="weight">weight of the sold item</param>
+        /// <param name="price">The price of the item.</param>
+        /// <param name="weight">The weight of the item.</param>
         public SoldItem(decimal price, double weight)
             : base(weight)
-        { 
-            this.price = price;
-        }
-
-        /// <summary>
-        /// getter for the price.
-        /// </summary>
-        public decimal Price
         {
-            get { return price; }
+            this.price = price;
         }
     }
 }

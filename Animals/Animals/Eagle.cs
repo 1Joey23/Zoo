@@ -1,35 +1,25 @@
-﻿using Reproducers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using Reproducers;
 
 namespace Animals
 {
     /// <summary>
-    /// Eagle class.
+    /// The class which is used to represent an eagle.
     /// </summary>
+    [Serializable]
     public class Eagle : Bird
     {
         /// <summary>
-        /// The Eagle constructor.
+        /// Initializes a new instance of the Eagle class.
         /// </summary>
-        /// <param name="name"> Eagle name</param>
-        /// <param name="age"> Eagle age</param>
-        /// <param name="weight"> Eagle weight</param>
+        /// <param name="name">The name of the eagle.</param>
+        /// <param name="age">The age of the eagle.</param>
+        /// <param name="weight">The weight of the eagle.</param>
+        /// <param name="gender">The gender of the eagle.</param>
         public Eagle(string name, int age, double weight, Gender gender)
             : base(name, age, weight, gender)
         {
             this.BabyWeightPercentage = 25.0;
-        }
-
-        /// <summary>
-        /// Eagle move.
-        /// </summary>
-        public override void Move()
-        {
-            // Eagle moves.
         }
     }
 }

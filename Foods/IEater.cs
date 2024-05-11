@@ -6,9 +6,14 @@
     public interface IEater
     {
         /// <summary>
-        /// Gets the weight of the eater.
+        /// Gets or sets the weight of the eater.
         /// </summary>
-        double Weight { get; }
+        double Weight { get; set; }
+
+        /// <summary>
+        /// Gets the percentage that the animal gains from eating food.
+        /// </summary>
+        double WeightGainPercentage { get; }
 
         /// <summary>
         /// Eats the specified food.

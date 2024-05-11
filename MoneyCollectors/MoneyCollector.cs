@@ -1,42 +1,58 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MoneyCollectors
 {
+    /// <summary>
+    /// The class which is used to represent a money collector.
+    /// </summary>
+    [Serializable]
     public abstract class MoneyCollector : IMoneyCollector
     {
         /// <summary>
-        /// The money in the moneycollector.
+        /// The money collector's current money balance.
         /// </summary>
         private decimal moneyBalance;
 
+        /// <summary>
+        /// Gets or sets the money collector's current money balance.
+        /// </summary>
         public decimal MoneyBalance
         {
-            get { return moneyBalance; }
+            get
+            {
+                return this.moneyBalance;
+            }
+            set
+            {
+                this.moneyBalance = value;
+                if (OnBalanceChange != null)
+                {
+                    OnBalanceChange();
+                }
+            }
         }
 
+        public Action OnBalanceChange { get; set; }
+
         /// <summary>
-        /// Adds a specified amount of money to the object.
+        /// Adds money to the money collector.
         /// </summary>
         /// <param name="amount">The amount of money to add.</param>
         public void AddMoney(decimal amount)
         {
-            this.moneyBalance += amount;
+            this.MoneyBalance += amount;
         }
 
         /// <summary>
-        /// Removes a specified amount of money from the object.
+        /// Removes a specified amount of money from the money collector.
         /// </summary>
-        /// <param name="amount">The amount of money to remove.</param>
-        /// <returns>The money that was removed.</returns>
+        /// <param name="amount">The amount of money to remove from the money collector.</param>
+        /// <returns>The amount of money that was removed from the money collector.</returns>
         public virtual decimal RemoveMoney(decimal amount)
         {
             decimal amountRemoved;
 
-            // If there is enough money in the object...
+            // If there is enough money in the wallet...
             if (this.moneyBalance >= amount)
             {
                 // Return the requested amount.
@@ -44,14 +60,14 @@ namespace MoneyCollectors
             }
             else
             {
-                // Otherwise return all the money that is left.
+                // Return all remaining money.
                 amountRemoved = this.moneyBalance;
             }
 
-            // Subtract the amount removed from the object's money balance.
-            this.moneyBalance -= amountRemoved;
+            // Subtract the amount removed from the wallet.
+            this.MoneyBalance -= amountRemoved;
+
             return amountRemoved;
         }
-
     }
 }

@@ -1,30 +1,39 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MoneyCollectors
 {
+    /// <summary>
+    /// The class that represents a pocket for collecting money.
+    /// </summary>
+    [Serializable]
     public class MoneyPocket : MoneyCollector
     {
-        private void Unfold()
-        {
-            // Unfold
-        }
-
+        /// <summary>
+        /// Removes money from the money pocket.
+        /// </summary>
+        /// <param name="amount">The amount of money to remove.</param>
+        /// <returns>The amount removed.</returns>
         public override decimal RemoveMoney(decimal amount)
         {
-            Unfold();
-            base.RemoveMoney(amount);
-            Fold();
-            return amount;
-            
+            decimal result;
+            this.Unfold();
+            result = base.RemoveMoney(amount);
+            this.Fold();
+            return result;
         }
 
+        /// <summary>
+        /// Folds the money pocket closed.
+        /// </summary>
         private void Fold()
         {
-            // Fold
+        }
+
+        /// <summary>
+        /// Unfolds the money pocket open.
+        /// </summary>
+        private void Unfold()
+        {
         }
     }
 }

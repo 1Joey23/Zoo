@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6740E2B0-EBBB-4494-A237-FB1E5BDB6B07}</ProjectGuid>
+    <ProjectGuid>{0115E053-5070-4A75-9566-F3C86B43D03D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BoothItems</RootNamespace>
     <AssemblyName>BoothItems</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,12 +43,19 @@
   <ItemGroup>
     <Compile Include="CouponBook.cs" />
     <Compile Include="Item.cs" />
-    <Compile Include="MissingItemException.cs" />
-    <Compile Include="SoldItem.cs" />
-    <Compile Include="WaterBottle.cs" />
-    <Compile Include="Ticket.cs" />
     <Compile Include="Map.cs" />
+    <Compile Include="MissingItemException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoldItem.cs" />
+    <Compile Include="Ticket.cs" />
+    <Compile Include="WaterBottle.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
 </Project>

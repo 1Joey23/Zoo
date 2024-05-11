@@ -1,6 +1,24 @@
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\Utilities\bin\Debug\Utilities.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\Utilities\bin\Debug\Utilities.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\Utilities\obj\Debug\Utilities.csproj.AssemblyReference.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\Utilities\obj\Debug\Utilities.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\Utilities\obj\Debug\Utilities.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\Utilities\bin\Debug\Utilities.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\Utilities\bin\Debug\Utilities.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\Utilities\obj\Debug\Utilities.csproj.AssemblyReference.cache
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\Utilities\obj\Debug\Utilities.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\Utilities\obj\Debug\Utilities.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\Utilities\bin\Debug\Utilities.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\Utilities\bin\Debug\Utilities.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\Utilities\obj\Debug\Utilities.csproj.AssemblyReference.cache
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\Utilities\obj\Debug\Utilities.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\Utilities\obj\Debug\Utilities.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\Utilities\bin\Debug\Utilities.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\Utilities\bin\Debug\Utilities.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\Utilities\obj\Debug\Utilities.csproj.AssemblyReference.cache
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\Utilities\obj\Debug\Utilities.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\Utilities\obj\Debug\Utilities.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\Utilities\bin\Debug\Utilities.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\Utilities\bin\Debug\Utilities.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\Utilities\obj\Debug\Utilities.csproj.AssemblyReference.cache
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\Utilities\obj\Debug\Utilities.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\Utilities\obj\Debug\Utilities.pdb

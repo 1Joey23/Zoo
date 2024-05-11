@@ -1,83 +1,75 @@
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\VendingMachines\bin\Debug\VendingMachines.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\VendingMachines\bin\Debug\VendingMachines.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\VendingMachines\bin\Debug\Animals.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\VendingMachines\bin\Debug\Foods.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\VendingMachines\bin\Debug\Reproducers.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\VendingMachines\bin\Debug\Animals.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\VendingMachines\bin\Debug\Foods.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\VendingMachines\bin\Debug\Reproducers.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.AssemblyReference.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.CoreCompileInputs.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.CopyComplete
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\VendingMachines\obj\Debug\VendingMachines.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\VendingMachines\obj\Debug\VendingMachines.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\VendingMachines\bin\Debug\MoneyCollectors.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\VendingMachines\bin\Debug\MoneyCollectors.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\VendingMachines\bin\Debug\VendingMachines.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\VendingMachines\bin\Debug\VendingMachines.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\VendingMachines\bin\Debug\Animals.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\VendingMachines\bin\Debug\Foods.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\VendingMachines\bin\Debug\MoneyCollectors.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\VendingMachines\bin\Debug\Reproducers.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\VendingMachines\bin\Debug\Animals.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\VendingMachines\bin\Debug\Foods.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\VendingMachines\bin\Debug\MoneyCollectors.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\VendingMachines\bin\Debug\Reproducers.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.AssemblyReference.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.CoreCompileInputs.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.CopyComplete
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\VendingMachines\obj\Debug\VendingMachines.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\VendingMachines\obj\Debug\VendingMachines.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\VendingMachines\bin\Debug\VendingMachines.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\VendingMachines\bin\Debug\VendingMachines.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\VendingMachines\bin\Debug\Animals.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\VendingMachines\bin\Debug\Foods.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\VendingMachines\bin\Debug\MoneyCollectors.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\VendingMachines\bin\Debug\Reproducers.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\VendingMachines\bin\Debug\Animals.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\VendingMachines\bin\Debug\Foods.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\VendingMachines\bin\Debug\MoneyCollectors.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\VendingMachines\bin\Debug\Reproducers.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.AssemblyReference.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.CoreCompileInputs.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.CopyComplete
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\VendingMachines\obj\Debug\VendingMachines.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.1\OOP 2 Zoo 2.1 Quisler\VendingMachines\obj\Debug\VendingMachines.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\VendingMachines\bin\Debug\VendingMachines.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\VendingMachines\bin\Debug\VendingMachines.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\VendingMachines\bin\Debug\Animals.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\VendingMachines\bin\Debug\Foods.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\VendingMachines\bin\Debug\MoneyCollectors.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\VendingMachines\bin\Debug\Reproducers.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\VendingMachines\bin\Debug\Animals.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\VendingMachines\bin\Debug\Foods.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\VendingMachines\bin\Debug\MoneyCollectors.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\VendingMachines\bin\Debug\Reproducers.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.AssemblyReference.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.CoreCompileInputs.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.CopyComplete
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\VendingMachines\obj\Debug\VendingMachines.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\VendingMachines\obj\Debug\VendingMachines.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\VendingMachines\bin\Debug\VendingMachines.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\VendingMachines\bin\Debug\VendingMachines.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\VendingMachines\bin\Debug\Animals.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\VendingMachines\bin\Debug\Foods.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\VendingMachines\bin\Debug\MoneyCollectors.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\VendingMachines\bin\Debug\Reproducers.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\VendingMachines\bin\Debug\CagedItems.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\VendingMachines\bin\Debug\Utilities.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\VendingMachines\bin\Debug\Animals.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\VendingMachines\bin\Debug\Foods.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\VendingMachines\bin\Debug\MoneyCollectors.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\VendingMachines\bin\Debug\Reproducers.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\VendingMachines\bin\Debug\CagedItems.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\VendingMachines\bin\Debug\Utilities.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\VendingMachines\obj\Debug\VendingMachines.csproj.AssemblyReference.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\VendingMachines\obj\Debug\VendingMachines.csproj.CoreCompileInputs.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\VendingMachines\obj\Debug\VendingMachines.csproj.CopyComplete
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\VendingMachines\obj\Debug\VendingMachines.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\VendingMachines\obj\Debug\VendingMachines.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\VendingMachines\bin\Debug\CagedItems.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\VendingMachines\bin\Debug\Utilities.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\VendingMachines\bin\Debug\CagedItems.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler\VendingMachines\bin\Debug\Utilities.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\VendingMachines\bin\Debug\VendingMachines.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\VendingMachines\bin\Debug\VendingMachines.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\VendingMachines\bin\Debug\Foods.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\VendingMachines\bin\Debug\MoneyCollectors.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\VendingMachines\bin\Debug\CagedItems.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\VendingMachines\bin\Debug\Utilities.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\VendingMachines\bin\Debug\Foods.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\VendingMachines\bin\Debug\MoneyCollectors.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\VendingMachines\bin\Debug\CagedItems.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\VendingMachines\bin\Debug\Utilities.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\VendingMachines\obj\Debug\VendingMachines.csproj.AssemblyReference.cache
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\VendingMachines\obj\Debug\VendingMachines.csproj.CoreCompileInputs.cache
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\VendingMachines\obj\Debug\VendingMachines.csproj.CopyComplete
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\VendingMachines\obj\Debug\VendingMachines.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\VendingMachines\obj\Debug\VendingMachines.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\VendingMachines\bin\Debug\VendingMachines.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\VendingMachines\bin\Debug\VendingMachines.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\VendingMachines\bin\Debug\Foods.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\VendingMachines\bin\Debug\MoneyCollectors.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\VendingMachines\bin\Debug\CagedItems.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\VendingMachines\bin\Debug\Utilities.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\VendingMachines\bin\Debug\Foods.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\VendingMachines\bin\Debug\MoneyCollectors.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\VendingMachines\bin\Debug\CagedItems.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\VendingMachines\bin\Debug\Utilities.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.AssemblyReference.cache
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.CoreCompileInputs.cache
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.CopyComplete
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\VendingMachines\obj\Debug\VendingMachines.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler\VendingMachines\obj\Debug\VendingMachines.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\VendingMachines\bin\Debug\VendingMachines.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\VendingMachines\bin\Debug\VendingMachines.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\VendingMachines\bin\Debug\Foods.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\VendingMachines\bin\Debug\MoneyCollectors.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\VendingMachines\bin\Debug\Utilities.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\VendingMachines\bin\Debug\Foods.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\VendingMachines\bin\Debug\MoneyCollectors.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\VendingMachines\bin\Debug\Utilities.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.AssemblyReference.cache
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.CoreCompileInputs.cache
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.CopyComplete
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\VendingMachines\obj\Debug\VendingMachines.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\VendingMachines\obj\Debug\VendingMachines.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\VendingMachines\bin\Debug\CagedItems.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.2\OOP 2 Zoo 5.2 Quisler\VendingMachines\bin\Debug\CagedItems.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\VendingMachines\bin\Debug\VendingMachines.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\VendingMachines\bin\Debug\VendingMachines.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\VendingMachines\bin\Debug\Foods.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\VendingMachines\bin\Debug\MoneyCollectors.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\VendingMachines\bin\Debug\CagedItems.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\VendingMachines\bin\Debug\Utilities.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\VendingMachines\bin\Debug\Foods.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\VendingMachines\bin\Debug\MoneyCollectors.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\VendingMachines\bin\Debug\CagedItems.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\VendingMachines\bin\Debug\Utilities.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.AssemblyReference.cache
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.CoreCompileInputs.cache
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.CopyComplete
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\VendingMachines\obj\Debug\VendingMachines.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\VendingMachines\obj\Debug\VendingMachines.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\VendingMachines\bin\Debug\VendingMachines.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\VendingMachines\bin\Debug\VendingMachines.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\VendingMachines\bin\Debug\Foods.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\VendingMachines\bin\Debug\MoneyCollectors.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\VendingMachines\bin\Debug\CagedItems.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\VendingMachines\bin\Debug\Utilities.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\VendingMachines\bin\Debug\Foods.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\VendingMachines\bin\Debug\MoneyCollectors.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\VendingMachines\bin\Debug\CagedItems.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\VendingMachines\bin\Debug\Utilities.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.AssemblyReference.cache
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.CoreCompileInputs.cache
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\VendingMachines\obj\Debug\VendingMachines.csproj.CopyComplete
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\VendingMachines\obj\Debug\VendingMachines.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\VendingMachines\obj\Debug\VendingMachines.pdb

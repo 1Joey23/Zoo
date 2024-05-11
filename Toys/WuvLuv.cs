@@ -1,10 +1,13 @@
-﻿using Reproducers;
+﻿using System;
 using Animals;
+using Reproducers;
+
 namespace Toys
 {
     /// <summary>
     /// The class which is used to represent a WuvLuv.
     /// </summary>
+    [Serializable]
     public class WuvLuv : IHatchable, IReproducer
     {
         /// <summary>
@@ -54,6 +57,17 @@ namespace Toys
         }
 
         /// <summary>
+        /// Gets the weight of the WuvLuv.
+        /// </summary>
+        public double Weight
+        {
+            get
+            {
+                return 2.1;
+            }
+        }
+
+        /// <summary>
         /// Hatches from its egg.
         /// </summary>
         public void Hatch()
@@ -76,17 +90,37 @@ namespace Toys
         public IReproducer Reproduce()
         {
             // Lay an egg.
-            IReproducer result = new WuvLuv(this.color);
+            IReproducer result = this.LayEgg();
 
             // If the baby is hatchable...
             if (result is IHatchable)
             {
                 // Hatch the baby out of its egg.
-                (result as IHatchable).Hatch();
+                this.HatchEgg(result as IHatchable);
             }
 
             // Return the (hatched) baby.
             return result;
+        }
+
+        /// <summary>
+        /// Hatches an egg.
+        /// </summary>
+        /// <param name="egg">The egg to hatch.</param>
+        private void HatchEgg(IHatchable egg)
+        {
+            // Hatch the egg.
+            egg.Hatch();
+        }
+
+        /// <summary>
+        /// Lays an egg.
+        /// </summary>
+        /// <returns>The resulting egg.</returns>
+        private IReproducer LayEgg()
+        {
+            // Return an egg containing a WuvLuv of the same color as the parent.
+            return new WuvLuv(this.color);
         }
     }
 }

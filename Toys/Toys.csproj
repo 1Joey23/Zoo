@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0C981785-FEF3-4D0A-AC2D-8194DBAF3ACC}</ProjectGuid>
+    <ProjectGuid>{95B997E0-17A0-4276-A7A9-34B30E9D69B8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Toys</RootNamespace>
     <AssemblyName>Toys</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,13 +46,20 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Animals\Animals.csproj">
-      <Project>{7bace754-1eee-45ea-a30f-2fb3288f212f}</Project>
+      <Project>{ce73316d-b770-4638-a44e-5732a4182f4f}</Project>
       <Name>Animals</Name>
     </ProjectReference>
     <ProjectReference Include="..\Reproducers\Reproducers.csproj">
-      <Project>{31a1844c-33a9-4351-802a-f3aa4c31cc5e}</Project>
+      <Project>{28bf9fc3-ea4a-49ad-a49c-fd8ca77174f4}</Project>
       <Name>Reproducers</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
 </Project>

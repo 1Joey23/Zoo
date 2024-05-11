@@ -2,22 +2,37 @@
 
 namespace BoothItems
 {
+    /// <summary>
+    /// The class which is used to represent a map.
+    /// </summary>
+    [Serializable]
     public class Map : Item
     {
+        /// <summary>
+        /// The date the map was issued.
+        /// </summary>
         private DateTime dateIssued;
 
-        // Constructor to initialize the fields
+        /// <summary>
+        /// Initializes a new instance of the Map class.
+        /// </summary>
+        /// <param name="weight">The weight of the map.</param>
+        /// <param name="dateIssued">The date the map was issued.</param>
         public Map(double weight, DateTime dateIssued)
             : base(weight)
         {
             this.dateIssued = dateIssued;
         }
 
-        // Properties for accessing the private fields
+        /// <summary>
+        /// Gets the date the map was issued.
+        /// </summary>
         public DateTime DateIssued
         {
-            get { return dateIssued; }
+            get
+            {
+                return this.dateIssued;
+            }
         }
     }
-
 }

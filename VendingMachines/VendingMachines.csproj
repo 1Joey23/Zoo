@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{54D73B95-BD3F-4F43-AED3-387DE16EA703}</ProjectGuid>
+    <ProjectGuid>{261EC534-CE38-4B28-9B11-B329B125E909}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>VendingMachines</RootNamespace>
     <AssemblyName>VendingMachines</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,21 +45,21 @@
     <Compile Include="VendingMachine.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Animals\Animals.csproj">
-      <Project>{7bace754-1eee-45ea-a30f-2fb3288f212f}</Project>
-      <Name>Animals</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Foods\Foods.csproj">
-      <Project>{ac8c3583-7543-494e-9d31-11959b3e4f55}</Project>
+      <Project>{6a2cf901-3c8d-4a75-a5da-7949cda8765a}</Project>
       <Name>Foods</Name>
     </ProjectReference>
     <ProjectReference Include="..\MoneyCollectors\MoneyCollectors.csproj">
-      <Project>{e594795e-389e-405b-9dda-fade3d870d79}</Project>
+      <Project>{1df4cea5-9e59-4be6-a00f-ee3cf3087c08}</Project>
       <Name>MoneyCollectors</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
 </Project>

@@ -1,24 +1,22 @@
-﻿using Reproducers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using MoneyCollectors;
+using Reproducers;
 
 namespace Animals
 {
     /// <summary>
-    /// Champanzee class.
+    /// The class which is used to represent a chimpanzee.
     /// </summary>
-    public class Chimpanzee : Mammal, IMoneyCollector
+    [Serializable]
+    public class Chimpanzee : Mammal//, IMoneyCollector
     {
         /// <summary>
-        /// The Champanzee constructor.
+        /// Initializes a new instance of the Chimpanzee class.
         /// </summary>
-        /// <param name="name"> Champanzee name</param>
-        /// <param name="age"> Champanzee age</param>
-        /// <param name="weight"> Champanzee weight</param>
+        /// <param name="name">The name of the chimpanzee.</param>
+        /// <param name="age">The age of the chimpanzee.</param>
+        /// <param name="weight">The weight of the chimpanzee (in pounds).</param>
+        /// <param name="gender">The gender of the chimpanzee.</param>
         public Chimpanzee(string name, int age, double weight, Gender gender)
             : base(name, age, weight, gender)
         {
@@ -26,26 +24,33 @@ namespace Animals
         }
 
         /// <summary>
-        /// Champanzee move.
+        /// Gets the chimpanzee money balance.
         /// </summary>
-        public override void Move()
-        {
-            base.Move();
-        }
-
         public decimal MoneyBalance
         {
-            get;
+            get
+            {
+                return 0m;
+            }
         }
 
+        /// <summary>
+        /// Adds money to the chimpanzee's money balance.
+        /// </summary>
+        /// <param name="amount">The amount to add.</param>
         public void AddMoney(decimal amount)
         {
-            // Buy bananas.
+            // Buy some bananas.
         }
 
+        /// <summary>
+        /// Removes the specified amount of money from the chimpanzee's money balance.
+        /// </summary>
+        /// <param name="amount">The amount to remove.</param>
+        /// <returns>The amount removed.</returns>
         public decimal RemoveMoney(decimal amount)
         {
-            return 0;
+            return 0m;
         }
     }
 }

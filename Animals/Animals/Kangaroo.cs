@@ -1,35 +1,25 @@
-﻿using Reproducers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using Reproducers;
 
 namespace Animals
 {
     /// <summary>
-    /// Kangaroo class.
+    /// The class which is used to represent a kangaroo.
     /// </summary>
+    [Serializable]
     public class Kangaroo : Mammal
     {
         /// <summary>
-        /// The Kangaroo constructor.
+        /// Initializes a new instance of the Kangaroo class.
         /// </summary>
-        /// <param name="name"> Kangaroo name</param>
-        /// <param name="age"> Kangaroo age</param>
-        /// <param name="weight"> Kangaroo weight</param>
+        /// <param name="name">The name of the kangaroo.</param>
+        /// <param name="age">The age of the kangaroo.</param>
+        /// <param name="weight">The weight of the kangaroo (in pounds).</param>
+        /// <param name="gender">The gender of the kangaroo.</param>
         public Kangaroo(string name, int age, double weight, Gender gender)
             : base(name, age, weight, gender)
         {
             this.BabyWeightPercentage = 13.0;
-        }
-
-        /// <summary>
-        /// Kangaroo move.
-        /// </summary>
-        public override void Move()
-        {
-            base.Move();
         }
     }
 }

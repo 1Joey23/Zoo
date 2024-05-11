@@ -1,19 +1,16 @@
-﻿using People;
+﻿using System;
+using System.Collections.Generic;
+using People;
 using Reproducers;
-using System;
 
 namespace BirthingRooms
 {
     /// <summary>
     /// The class which is used to represent a birthing room.
     /// </summary>
+    [Serializable]
     public class BirthingRoom
     {
-        /// <summary>
-        /// The initial temperature of the birthing room.
-        /// </summary>
-        private readonly double initialTemperature = 77.0;
-
         /// <summary>
         /// The minimum allowable temperature of the birthing room.
         /// </summary>
@@ -22,7 +19,12 @@ namespace BirthingRooms
         /// <summary>
         /// The maximum allowable temperature of the birthing room.
         /// </summary>
-        public static readonly double MaxTemperature = 95.0;    
+        public static readonly double MaxTemperature = 95.0;
+
+        /// <summary>
+        /// The initial temperature of the birthing room.
+        /// </summary>
+        private readonly double initialTemperature = 77.0;
 
         /// <summary>
         /// The current temperature of the birthing room.
@@ -40,8 +42,9 @@ namespace BirthingRooms
         /// <param name="vet">The employee to be the birthing room's vet.</param>
         public BirthingRoom(Employee vet)
         {
-            this.Temperature = this.initialTemperature;
+            this.temperature = this.initialTemperature;
             this.vet = vet;
+            this.PregnantAnimals = new Queue<IReproducer>();
         }
 
         /// <summary>
@@ -56,35 +59,51 @@ namespace BirthingRooms
 
             set
             {
-                // If the value is in range...
-                if (value >= MinTemperature && value <= MaxTemperature)
+                // If the value is above the maximum temperature.
+                if (value > BirthingRoom.MaxTemperature)
                 {
-                    this.temperature = value;
+                    throw new ArgumentOutOfRangeException("temperature", string.Format("The temperature must be below {0}° degrees", BirthingRoom.MaxTemperature));                 
                 }
-                else if (value >= MaxTemperature)
+                else if (value < BirthingRoom.MinTemperature)
                 {
-                    throw new ArgumentOutOfRangeException("temperature", "The temperature must be below 95 degrees");
+                    throw new ArgumentOutOfRangeException("temperature", string.Format("The temperature must be above {0}° degrees.", BirthingRoom.MinTemperature));
                 }
                 else
                 {
-                    throw new ArgumentOutOfRangeException("temperature", "The temperature must be above 35 degrees");
+                    // Set temperature.
+                    double priorTemp = this.temperature;
+                    this.temperature = value;
+                    if (this.OnTemperatureChange != null)
+                    {
+                        OnTemperatureChange(priorTemp, value);
+                    }
                 }
             }
         }
 
         /// <summary>
+        /// Gets the queue of pregnant animals.
+        /// </summary>
+        public Queue<IReproducer> PregnantAnimals { get; private set; }
+
+        public Action<double, double> OnTemperatureChange
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
         /// Births a reproducer.
         /// </summary>
-        /// <param name="reproducer">The reproducer that is to give birth.</param>
         /// <returns>The resulting baby reproducer.</returns>
-        public IReproducer BirthAnimal(IReproducer reproducer)
+        public IReproducer BirthAnimal()
         {
             IReproducer baby = null;
 
-            // If the reproducer is present and is pregnant...
-            if (reproducer != null && reproducer.IsPregnant)
+            // Have the vet deliver the reproducer.
+            if (this.PregnantAnimals.Count != 0)
             {
-                baby = this.vet.DeliverAnimal(reproducer);
+                baby = this.vet.DeliverAnimal(this.PregnantAnimals.Dequeue());
 
                 // Increase the temperature due to the heat generated from birthing.
                 this.Temperature += 0.5;

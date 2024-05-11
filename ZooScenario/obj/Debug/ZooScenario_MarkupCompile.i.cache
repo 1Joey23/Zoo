@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\ZooScenario\obj\Debug\
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooScenario\obj\Debug\
 ZooScenario
 none
 false
 DEBUG;TRACE
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\2.1-2.3\2.2\OOP 2 Zoo 2.2 Quisler Before Removed Move Overrides\ZooScenario\App.xaml
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooScenario\App.xaml
 4-441207677
 
-9803203581
-25-475219231
+9512103024
+26-402972852
 AnimalWindow.xaml;CageWindow.xaml;GuestWindow.xaml;MainWindow.xaml;
 
-True
+False
 

@@ -2,12 +2,28 @@
 
 namespace BoothItems
 {
+    /// <summary>
+    /// The class which is used to represent a coupon book.
+    /// </summary>
+    [Serializable]
     public class CouponBook : Item
     {
+        /// <summary>
+        /// The date the coupon book was made.
+        /// </summary>
         private DateTime dateMade;
+
+        /// <summary>
+        /// The expiration date of the coupon book.
+        /// </summary>
         private DateTime dateExpired;
 
-        // Constructor to initialize the fields
+        /// <summary>
+        /// Initializes a new instance of the CouponBook class.
+        /// </summary>
+        /// <param name="dateMade">The date the coupon book was made.</param>
+        /// <param name="dateExpired">The date the coupon book expires.</param>
+        /// <param name="weight">The weight of the coupon book.</param>
         public CouponBook(DateTime dateMade, DateTime dateExpired, double weight)
             : base(weight)
         {
@@ -15,16 +31,26 @@ namespace BoothItems
             this.dateExpired = dateExpired;
         }
 
-        // Properties for accessing the private fields
+        /// <summary>
+        /// Gets the date the coupon book was made.
+        /// </summary>
         public DateTime DateMade
         {
-            get { return dateMade; }
+            get
+            {
+                return this.dateMade;
+            }
         }
 
+        /// <summary>
+        /// Gets the expiration date of the coupon book.
+        /// </summary>
         public DateTime DateExpired
         {
-            get { return dateExpired; }
+            get
+            {
+                return this.dateExpired;
+            }
         }
     }
-
 }

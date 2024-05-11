@@ -1,89 +1,96 @@
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\bin\Debug\ZooConsole.exe.config
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\bin\Debug\ZooConsole.exe
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\bin\Debug\ZooConsole.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\obj\Debug\ZooConsole.csproj.AssemblyReference.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\obj\Debug\ZooConsole.csproj.CoreCompileInputs.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\obj\Debug\ZooConsole.exe
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\obj\Debug\ZooConsole.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\bin\Debug\People.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\bin\Debug\Zoos.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\bin\Debug\ZooScenario.exe
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\bin\Debug\BoothItems.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\bin\Debug\Foods.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\bin\Debug\Reproducers.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\bin\Debug\VendingMachines.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\bin\Debug\Animals.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\bin\Debug\BirthingRooms.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\bin\Debug\People.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\bin\Debug\ZooScenario.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\bin\Debug\ZooScenario.exe.config
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\bin\Debug\Zoos.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\bin\Debug\BoothItems.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\bin\Debug\Foods.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\bin\Debug\Reproducers.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\bin\Debug\VendingMachines.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\bin\Debug\Animals.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\bin\Debug\BirthingRooms.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.2\OOP 2 Zoo 1.2 Quisler\ZooConsole\obj\Debug\ZooConsole.csproj.CopyComplete
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\ZooConsole.exe.config
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\ZooConsole.exe
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\ZooConsole.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\Animals.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\People.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\Zoos.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\ZooScenario.exe
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\Foods.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\Reproducers.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\MoneyCollectors.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\BoothItems.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\VendingMachines.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\Accounts.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\BirthingRooms.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\Animals.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\People.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\ZooScenario.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\ZooScenario.exe.config
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\Zoos.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\Foods.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\Reproducers.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\MoneyCollectors.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\BoothItems.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\VendingMachines.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\Accounts.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\bin\Debug\BirthingRooms.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\obj\Debug\ZooConsole.csproj.AssemblyReference.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\obj\Debug\ZooConsole.csproj.CoreCompileInputs.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\obj\Debug\ZooConsole.csproj.CopyComplete
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\obj\Debug\ZooConsole.exe
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.3\OOP 2 Zoo 1.3 Quisler\ZooConsole\obj\Debug\ZooConsole.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\ZooConsole.exe.config
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\ZooConsole.exe
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\ZooConsole.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\Animals.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\People.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\Zoos.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\ZooScenario.exe
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\Foods.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\Reproducers.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\MoneyCollectors.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\BoothItems.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\VendingMachines.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\Accounts.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\BirthingRooms.dll
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\Animals.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\People.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\ZooScenario.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\ZooScenario.exe.config
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\Zoos.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\Foods.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\Reproducers.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\MoneyCollectors.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\BoothItems.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\VendingMachines.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\Accounts.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\bin\Debug\BirthingRooms.pdb
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\obj\Debug\ZooConsole.csproj.AssemblyReference.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\obj\Debug\ZooConsole.csproj.CoreCompileInputs.cache
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\obj\Debug\ZooConsole.csproj.CopyComplete
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\obj\Debug\ZooConsole.exe
-C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\1.4\OOP 2 Zoo 1.4 Quisler\ZooConsole\obj\Debug\ZooConsole.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\ZooConsole.exe.config
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\ZooConsole.exe
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\ZooConsole.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\Accounts.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\Animals.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\BirthingRooms.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\BoothItems.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\MoneyCollectors.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\People.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\Reproducers.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\Utilities.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\Zoos.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\Foods.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\CagedItems.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\VendingMachines.dll
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\Accounts.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\Animals.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\BirthingRooms.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\BoothItems.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\MoneyCollectors.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\People.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\Reproducers.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\Utilities.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\Zoos.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\Foods.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\CagedItems.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\bin\Debug\VendingMachines.pdb
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\obj\Debug\ZooConsole.csproj.AssemblyReference.cache
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\obj\Debug\ZooConsole.csproj.CoreCompileInputs.cache
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\obj\Debug\ZooConsole.csproj.CopyComplete
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\obj\Debug\ZooConsole.exe
+C:\Users\Joey\Documents\Spring 2024 OOP2\C# Code\5.1-5.4\5.1\OOP 2 Zoo 5.1 Quisler End\ZooConsole\obj\Debug\ZooConsole.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\ZooConsole.exe.config
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\ZooConsole.exe
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\ZooConsole.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\Accounts.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\Animals.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\BirthingRooms.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\BoothItems.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\MoneyCollectors.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\People.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\Reproducers.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\Utilities.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\Zoos.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\Foods.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\CagedItems.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\VendingMachines.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\Accounts.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\Animals.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\BirthingRooms.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\BoothItems.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\MoneyCollectors.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\People.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\Reproducers.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\Utilities.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\Zoos.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\Foods.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\CagedItems.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\bin\Debug\VendingMachines.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\obj\Debug\ZooConsole.csproj.AssemblyReference.cache
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\obj\Debug\ZooConsole.csproj.CoreCompileInputs.cache
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\obj\Debug\ZooConsole.csproj.CopyComplete
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\obj\Debug\ZooConsole.exe
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.3\OOP 2 Zoo 5.3 Quisler\ZooConsole\obj\Debug\ZooConsole.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\ZooConsole.exe.config
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\ZooConsole.exe
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\ZooConsole.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\Accounts.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\Animals.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\BirthingRooms.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\BoothItems.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\MoneyCollectors.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\People.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\Reproducers.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\Utilities.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\Zoos.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\Foods.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\CagedItems.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\VendingMachines.dll
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\Accounts.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\Animals.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\BirthingRooms.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\BoothItems.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\MoneyCollectors.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\People.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\Reproducers.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\Utilities.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\Zoos.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\Foods.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\CagedItems.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\bin\Debug\VendingMachines.pdb
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\obj\Debug\ZooConsole.csproj.AssemblyReference.cache
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\obj\Debug\ZooConsole.csproj.CoreCompileInputs.cache
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\obj\Debug\ZooConsole.csproj.CopyComplete
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\obj\Debug\ZooConsole.exe
+C:\Users\Joey\Documents\2024 Spring Semester\Spring 2024 OOP2\C# Code\5.1-5.4\5.4\OOP 2 Zoo 5.4 Quisler\ZooConsole\obj\Debug\ZooConsole.pdb

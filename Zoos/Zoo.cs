@@ -1,25 +1,33 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
-using People;
+using System.Diagnostics;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
+using Accounts;
 using Animals;
-using VendingMachines;
-using Reproducers;
 using BirthingRooms;
 using BoothItems;
+using CagedItems;
 using MoneyCollectors;
-using Accounts;
+using People;
+using Reproducers;
+using VendingMachines;
 
 namespace Zoos
 {
     /// <summary>
     /// The class which is used to represent a zoo.
     /// </summary>
+    [Serializable]
     public class Zoo
     {
         /// <summary>
         /// A list of all animals currently residing within the zoo.
         /// </summary>
-        private readonly List<Animal> animals;
+        private List<Animal> animals;
 
         /// <summary>
         /// The zoo's vending machine which allows guests to buy snacks for animals.
@@ -32,6 +40,11 @@ namespace Zoos
         private BirthingRoom b168;
 
         /// <summary>
+        /// The zoo's collection of cages.
+        /// </summary>
+        private Dictionary<Type, Cage> cages = new Dictionary<Type, Cage>();
+
+        /// <summary>
         /// The maximum number of guests the zoo can accommodate at a given time.
         /// </summary>
         private int capacity;
@@ -40,6 +53,11 @@ namespace Zoos
         /// A list of all guests currently visiting the zoo.
         /// </summary>
         private List<Guest> guests;
+
+        /// <summary>
+        /// The zoo's information booth.
+        /// </summary>
+        private GivingBooth informationBooth;
 
         /// <summary>
         /// The zoo's ladies' restroom.
@@ -57,19 +75,24 @@ namespace Zoos
         private string name;
 
         /// <summary>
-        /// The zoo's ticket booth for selling items.
+        /// The zoo's ticket booth.
         /// </summary>
         private MoneyCollectingBooth ticketBooth;
 
-        /// <summary>
-        /// The zoo's booth for handing out informative items.
-        /// </summary>
-        private GivingBooth informationBooth;
+        [NonSerialized]
+        private Action<double, double> onBirthingRoomTemperatureChange;
 
-        /// <summary>
-        /// The list of cages for each animal in the zoo.
-        /// </summary>
-        private List<Cage> cages;
+        [NonSerialized]
+        private Action<Guest> onAddGuest;
+
+        [NonSerialized]
+        private Action<Guest> onRemoveGuest;
+
+        [NonSerialized]
+        private Action<Animal> onAddAnimal;
+
+        [NonSerialized]
+        private Action<Animal> onRemoveAnimal;
 
         /// <summary>
         /// Initializes a new instance of the Zoo class.
@@ -79,7 +102,8 @@ namespace Zoos
         /// <param name="restroomCapacity">The capacity of the zoo's restrooms.</param>
         /// <param name="animalFoodPrice">The price of a pound of food from the zoo's animal snack machine.</param>
         /// <param name="ticketPrice">The price of an admission ticket to the zoo.</param>
-        /// <param name="boothMoneyBalance">The initial money balance of the zoo's ticket booth.</param>
+        /// <param name="waterBottlePrice">The price of a water bottle.</param>
+        /// <param name="boothMoneyBalance">The money balance of the money collecting booth.</param>
         /// <param name="attendant">The zoo's ticket booth attendant.</param>
         /// <param name="vet">The zoo's birthing room vet.</param>
         public Zoo(string name, int capacity, int restroomCapacity, decimal animalFoodPrice, decimal ticketPrice, decimal waterBottlePrice, decimal boothMoneyBalance, Employee attendant, Employee vet)
@@ -87,25 +111,72 @@ namespace Zoos
             this.animals = new List<Animal>();
             this.animalSnackMachine = new VendingMachine(animalFoodPrice, new Account());
             this.b168 = new BirthingRoom(vet);
+            this.b168.OnTemperatureChange = (previousTemp, currentTemp) =>
+            {
+                OnBirthingRoomTemperatureChange(previousTemp, currentTemp);
+            };
             this.capacity = capacity;
             this.guests = new List<Guest>();
+            this.informationBooth = new GivingBooth(attendant);
             this.ladiesRoom = new Restroom(restroomCapacity, Gender.Female);
             this.mensRoom = new Restroom(restroomCapacity, Gender.Male);
             this.name = name;
             this.ticketBooth = new MoneyCollectingBooth(attendant, ticketPrice, waterBottlePrice, new MoneyBox());
-            this.informationBooth = new GivingBooth(attendant);
             this.ticketBooth.AddMoney(boothMoneyBalance);
-            this.cages = new List<Cage>();
 
-            /// Iterate through each animal type in the AnimalType Enum for instantiation of the dedicated cage for the type.
-            foreach (AnimalType animalType in Enum.GetValues(typeof(AnimalType)))
+            foreach (AnimalType at in Enum.GetValues(typeof(AnimalType)))
             {
-                cages.Add(new Cage(400, 800, Animal.ConvertAnimalTypeToType(animalType)));
+                this.cages.Add(Animal.ConvertAnimalTypeToType(at), new Cage(400, 800));
             }
+
+            // Animals for sorting
+            this.AddAnimal(new Chimpanzee("Bobo", 10, 128.2, Gender.Male));
+            this.AddAnimal(new Chimpanzee("Bubbles", 3, 103.8, Gender.Female));
+            this.AddAnimal(new Dingo("Spot", 5, 41.3, Gender.Male));
+            this.AddAnimal(new Dingo("Maggie", 6, 37.2, Gender.Female));
+            this.AddAnimal(new Dingo("Toby", 0, 15.0, Gender.Male));
+            this.AddAnimal(new Eagle("Ari", 12, 10.1, Gender.Female));
+            this.AddAnimal(new Hummingbird("Buzz", 2, 0.02, Gender.Male));
+            this.AddAnimal(new Hummingbird("Bitsy", 1, 0.03, Gender.Female));
+            this.AddAnimal(new Kangaroo("Kanga", 8, 72.0, Gender.Female));
+            this.AddAnimal(new Kangaroo("Roo", 0, 23.9, Gender.Male));
+            this.AddAnimal(new Kangaroo("Jake", 9, 153.5, Gender.Male));
+            this.AddAnimal(new Ostrich("Stretch", 26, 231.7, Gender.Male));
+            this.AddAnimal(new Ostrich("Speedy", 30, 213.0, Gender.Female));
+            this.AddAnimal(new Platypus("Patti", 13, 4.4, Gender.Female));
+            this.AddAnimal(new Platypus("Bill", 11, 4.9, Gender.Male));
+            this.AddAnimal(new Platypus("Ted", 0, 1.1, Gender.Male));
+            this.AddAnimal(new Shark("Bruce", 19, 810.6, Gender.Female));
+            this.AddAnimal(new Shark("Anchor", 17, 458.0, Gender.Male));
+
+            Shark chum = new Shark("Chum", 14, 377.3, Gender.Male);
+            this.AddAnimal(chum);
+
+            Squirrel chip = new Squirrel("Chip", 4, 1.0, Gender.Male);
+            this.AddAnimal(chip);
+            this.AddAnimal(new Squirrel("Dale", 4, 0.9, Gender.Male));
+
+            // Guests for sorting
+            Guest greg = new Guest("Greg", 35, 100.0m, WalletColor.Crimson, Gender.Male, new Account());
+            Guest darla = new Guest("Darla", 7, 10.0m, WalletColor.Brown, Gender.Female, new Account());
+
+            this.AddGuest(greg, new Ticket(0m, 0, 0));
+            this.AddGuest(darla, new Ticket(0m, 0, 0));
+            this.AddGuest(new Guest("Anna", 8, 12.56m, WalletColor.Brown, Gender.Female, new Account()), new Ticket(0m, 0, 0));
+            this.AddGuest(new Guest("Matthew", 42, 10.0m, WalletColor.Brown, Gender.Male, new Account()), new Ticket(0m, 0, 0));
+            this.AddGuest(new Guest("Doug", 7, 11.10m, WalletColor.Brown, Gender.Male, new Account()), new Ticket(0m, 0, 0));
+            this.AddGuest(new Guest("Jared", 17, 31.70m, WalletColor.Brown, Gender.Male, new Account()), new Ticket(0m, 0, 0));
+            this.AddGuest(new Guest("Sean", 34, 20.50m, WalletColor.Brown, Gender.Male, new Account()), new Ticket(0m, 0, 0));
+            this.AddGuest(new Guest("Sally", 52, 134.20m, WalletColor.Brown, Gender.Female, new Account()), new Ticket(0m, 0, 0));
+
+            // Adopt the animals.
+            greg.AdoptedAnimal = chip;
+            darla.AdoptedAnimal = chum;
+            
         }
 
         /// <summary>
-        /// The property getter for populating the popup window for animals.
+        /// Gets a list of the zoo's animals.
         /// </summary>
         public IEnumerable<Animal> Animals
         {
@@ -116,13 +187,29 @@ namespace Zoos
         }
 
         /// <summary>
-        /// The property getter for populating the popup window for guests.
+        /// Gets or sets the temperature of the zoo's birthing room.
         /// </summary>
-        public IEnumerable<Guest> Guests
+        public double BirthingRoomTemperature
         {
             get
             {
-                return this.guests;
+                return this.b168.Temperature;
+            }
+
+            set
+            {
+                this.b168.Temperature = value;
+            }
+        }
+
+         /// <summary>
+        /// Gets the average weight of all animals in the zoo.
+        /// </summary>
+        public double AverageAnimalWeight
+        {
+            get
+            {
+                return this.TotalAnimalWeight / this.animals.Count;
             }
         }
 
@@ -136,30 +223,15 @@ namespace Zoos
                 return this.animalSnackMachine;
             }
         }
-
+          
         /// <summary>
-        /// Gets the average weight of all animals in the zoo.
+        /// Gets a list of the zoo's guests.
         /// </summary>
-        public double AverageAnimalWeight
+        public IEnumerable<Guest> Guests
         {
             get
             {
-                return this.TotalAnimalWeight / this.animals.Count;
-            }
-        }
-
-        /// <summary>
-        /// Gets the temperature of the zoo's birthing room.
-        /// </summary>
-        public double BirthingRoomTemperature
-        {
-            get
-            {
-                return this.b168.Temperature;
-            }
-            set
-            {
-                this.b168.Temperature = value;
+                return this.guests;
             }
         }
 
@@ -170,18 +242,116 @@ namespace Zoos
         {
             get
             {
-                // Define accumulator variable.
                 double totalWeight = 0;
 
-                // Loop through the list of animals.
+                // Loop through the zoo's list of animals.
                 foreach (Animal a in this.animals)
                 {
-                    // Add current animal's weight to the total.
+                    // Add the current animal's weight to the total.
                     totalWeight += a.Weight;
                 }
 
                 return totalWeight;
             }
+        }
+
+        public Action<double, double> OnBirthingRoomTemperatureChange
+        {
+            get
+            {
+                return this.onBirthingRoomTemperatureChange;
+            }
+            set
+            {
+                this.onBirthingRoomTemperatureChange = value;
+            }
+        }
+
+        public Action<Guest> OnAddGuest
+        {
+            get
+            {
+                return this.onAddGuest;
+            }
+            set
+            {
+                this.onAddGuest = value;
+            }
+        }
+        public Action<Guest> OnRemoveGuest
+        {
+            get
+            {
+                return this.onRemoveGuest;
+            }
+            set
+            {
+                this.onRemoveGuest = value;
+            }
+        }
+
+        public Action<Animal> OnAddAnimal
+        {
+            get
+            {
+                return this.onAddAnimal;
+            }
+            set
+            {
+                this.onAddAnimal = value;
+            }
+        }
+        public Action<Animal> OnRemoveAnimal
+        {
+            get
+            {
+                return this.onRemoveAnimal;
+            }
+            set
+            {
+                this.onRemoveAnimal = value;
+            }
+        }
+
+        /// <summary>
+        /// Loads a zoo from a file.
+        /// </summary>
+        /// <param name="fileName">The name of the file to load.</param>
+        /// <returns>The loaded zoo.</returns>
+        public static Zoo LoadFromFile(string fileName)
+        {
+            // Define and initialize a result variable
+            Zoo result = null;
+
+            // Create a binary formatter
+            BinaryFormatter formatter = new BinaryFormatter();
+
+            // Open and read a file using the passed-in file name
+            // Use a using statement to automatically clean up object references
+            // and close the file handle when the deserialization process is complete
+            using (Stream stream = File.OpenRead(fileName))
+            {
+                // Deserialize (load) the file as a Zoo
+                result = formatter.Deserialize(stream) as Zoo;
+            }
+
+            // Return result
+            return result;
+        }
+
+        /// <summary>
+        /// Creates a new zoo.
+        /// </summary>
+        /// <returns>A newly created zoo.</returns>
+        public static Zoo NewZoo()
+        {
+            // Create an instance of the Zoo class.
+            Zoo comoZoo = new Zoo("Como Zoo", 1000, 4, 0.75m, 15.00m, 3.00m, 3640.25m, new Employee("Sam", 42), new Employee("Flora", 98));
+
+            // Set the initial money balance of the animal snack machine.
+            comoZoo.AnimalSnackMachine.AddMoney(42.75m);    
+
+            return comoZoo;
         }
 
         /// <summary>
@@ -191,36 +361,57 @@ namespace Zoos
         public void AddAnimal(Animal animal)
         {
             this.animals.Add(animal);
-            Cage cage = this.FindCage(animal.GetType());
-            cage.AddAnimal(animal);
+            if (OnAddAnimal != null)
+            {
+                OnAddAnimal(animal);
+            }
+
+            animal.OnPregnant = (reproducer) =>
+            {
+                this.b168.PregnantAnimals.Enqueue(reproducer);
+            };
+            
+            animal.IsActive = true;
+
+            this.cages[animal.GetType()].Add(animal);
+
+            if (animal.IsPregnant)
+            {
+                this.b168.PregnantAnimals.Enqueue(animal);
+            }
         }
 
         /// <summary>
-        /// Adds a guest to the zoo if the have a valid ticket.
+        /// Adds a guest to the zoo.
         /// </summary>
         /// <param name="guest">The guest to add.</param>
+        /// <param name="ticket">The guest's ticket.</param>
         public void AddGuest(Guest guest, Ticket ticket)
         {
-            if (ticket != null)
+            if (ticket == null || ticket.IsRedeemed == true)
             {
-                ticket.Redeem();
-                this.guests.Add(guest);
+                throw new NullReferenceException("Guest " + guest.Name + " was not added because they did not have a ticket.");
             }
             else
             {
-                throw new NullReferenceException("The ticket from the guest is absent, preventing admission.");
+                ticket.Redeem();
+                this.guests.Add(guest);
+                if (OnAddAnimal != null)
+                {
+                    OnAddGuest(guest);
+                }
+
+                guest.GetVendingMachine += this.ProvideVendingMachine;
             }
-            
         }
 
         /// <summary>
         /// Aids a reproducer in giving birth.
         /// </summary>
-        /// <param name="reproducer">The reproducer that is to give birth.</param>
-        public void BirthAnimal(IReproducer reproducer)
+        public void BirthAnimal()
         {
             // Birth animal.
-            IReproducer baby = this.b168.BirthAnimal(reproducer);
+            IReproducer baby = this.b168.BirthAnimal();
 
             // If the baby is an animal...
             if (baby is Animal)
@@ -231,151 +422,24 @@ namespace Zoos
         }
 
         /// <summary>
-        /// Create the new zoo.
+        /// Finds the first cage that holds the specified type of animal.
         /// </summary>
-        /// <returns>The created zoo.</returns>
-        public static Zoo NewZoo()
-        {
-            // Create an instance of the Zoo class.
-            Zoo comoZoo = new Zoo("Como Zoo", 1000, 4, 0.75m, 15.00m, 3.00m, 3640.25m, new Employee("Sam", 42), new Employee("Flora", 98));
-
-            // Add money to the animal snack machine.
-            comoZoo.AnimalSnackMachine.AddMoney(42.75m);
-
-            return comoZoo;
-        }
-
-        /// <summary>
-        /// Find the animal to display in the console.
-        /// </summary>
-        /// <param name="name">The animals name.</param>
-        /// <returns>hopefully an animal.</returns>
-        public Animal FindAnimal(string name)
-        {
-            Animal animal = null;
-
-            foreach (Animal a in this.animals)
-            {
-                if (a.Name == name)
-                {
-                    animal = a;
-
-                    break;
-                }
-            }
-            return animal;
-        }
-
-        /// <summary>
-        /// Finds an animal based on type.
-        /// </summary>
-        /// <param name="type">The type of the animal to find.</param>
-        /// <returns>The first matching animal.</returns>
-        public Animal FindAnimal(Type type)
-        {
-            // Define variable to hold matching animal.
-            Animal animal = null;
-
-            // Loop through the list of animals.
-            foreach (Animal a in this.animals)
-            {
-                // If the current animal matches...
-                if (a.GetType() == type)
-                {
-                    // Set the current animal to the variable.
-                    animal = a;
-
-                    // Break out of the loop.
-                    break;
-                }
-            }
-
-            // Return the matching animal.
-            return animal;
-        }
-
-        /// <summary>
-        /// Finds an animal based on type and pregnancy status.
-        /// </summary>
-        /// <param name="type">The type of the animal to find.</param>
-        /// <param name="isPregnant">The pregnancy status of the animal to find.</param>
-        /// <returns>The first matching animal.</returns>
-        public Animal FindAnimal(Type type, bool isPregnant)
-        {
-            // Define variable to hold matching animal.
-            Animal animal = null;
-
-            // Loop through the list of animals.
-            foreach (Animal a in this.animals)
-            {
-                // If the current animal matches...
-                if (a.GetType() == type && a.IsPregnant == isPregnant)
-                {
-                    // Store the current animal in the variable.
-                    animal = a;
-
-                    // Break out of the loop.
-                    break;
-                }
-            }
-
-            // Return the matching animal.
-            return animal;
-        }
-
+        /// <param name="animalType">The type of animal whose cage to find.</param>
+        /// <returns>The found cage.</returns>
         public Cage FindCage(Type animalType)
         {
-            Cage cage = null;
+            Cage result = null;
 
-            // Loop through the list of cages.
-            foreach (Cage c in this.cages)
-            {
-                // If the current animal type matches to the cage
-                if (c.AnimalType == animalType)
-                {
-                    // Store the current cage in the variable.
-                    cage = c;
+            this.cages.TryGetValue(animalType, out result);
 
-                    // Break out of the loop.
-                    break;
-                }
-            }
-            return cage;
+            return result;
         }
 
         /// <summary>
-        /// Finds a guest based on name.
+        /// Gets all animals of a specified type.
         /// </summary>
-        /// <param name="name">The name of the guest to find.</param>
-        /// <returns>The first matching guest.</returns>
-        public Guest FindGuest(string name)
-        {
-            // Define a variable to hold matching guest.
-            Guest guest = null;
-
-            // Loop through the list of guests.
-            foreach (Guest g in this.guests)
-            {
-                // If the current guest matches...
-                if (g.Name == name)
-                {
-                    // Store the current guest in the variable
-                    guest = g;
-
-                    // Break out of the loop
-                    break;
-                }
-            }
-
-            // Return the matching guest.
-            return guest;
-        }
-
-        /// <summary>
-        /// Add every instance of the same type animal to a list and return the list.
-        /// </summary>
-        /// <param name="type"></param>
-        /// <returns></returns>
+        /// <param name="type">The type of animals to get.</param>
+        /// <returns>The collection of animals.</returns>
         public IEnumerable<Animal> GetAnimals(Type type)
         {
             List<Animal> result = new List<Animal>();
@@ -388,50 +452,293 @@ namespace Zoos
                 }
             }
 
-            return result; 
-        }
-
-
-        /// <summary>
-        /// Sell the ticket to the guest and visit information booth.
-        /// </summary>
-        /// <param name="guest">The guest.</param>
-        /// <returns>The guest's ticket.</returns>
-        public Ticket SellTicket(Guest guest)
-        {
-            Ticket ticket = guest.VisitTicketBooth(this.ticketBooth);
-            guest.VisitInformationBooth(this.informationBooth);
-            return ticket;
+            return result;
         }
 
         /// <summary>
-        /// Removes the selected animal from the zoo.
+        /// Removes an animal from the zoo.
         /// </summary>
-        /// <param name="animal">The animal to be removed.</param>
+        /// <param name="animal">The animal to remove.</param>
         public void RemoveAnimal(Animal animal)
         {
             this.animals.Remove(animal);
-            Cage cage = this.FindCage(animal.GetType());
-            cage.RemoveAnimal(animal);
+            OnRemoveAnimal(animal);
+            animal.IsActive = false;
 
-            // Remove the guest's animal when the animal is removed and taken to the butcherhouse to make some McDonalds burgers.
-            foreach (Guest guest in this.guests)
+            this.cages[animal.GetType()].Remove(animal);
+
+            foreach (Guest g in this.Guests)
             {
-                if (guest.AdoptedAnimal == animal)
+                if (g.AdoptedAnimal == animal)
                 {
-                    guest.AdoptedAnimal = null;
-                    cage.RemoveAnimal(guest);
+                    g.AdoptedAnimal = null;
                 }
             }
         }
 
         /// <summary>
-        /// Removes the selected guest from the zoo.
+        /// Removes a guest from the zoo.
         /// </summary>
-        /// <param name="guest">The guest to be removed.</param>
+        /// <param name="guest">The guest to remove.</param>
         public void RemoveGuest(Guest guest)
         {
             this.guests.Remove(guest);
+            OnRemoveGuest(guest);
+            guest.IsActive = false;
+
+            if (guest.AdoptedAnimal != null)
+            {
+                Cage cage = this.FindCage(guest.AdoptedAnimal.GetType());
+
+                cage.Remove(guest);
+            }
         }
+
+        /// <summary>
+        /// Saves the zoo to a file.
+        /// </summary>
+        /// <param name="fileName">The name of the file to save.</param>
+        public void SaveToFile(string fileName)
+        {
+            // Create a binary formatter
+            BinaryFormatter formatter = new BinaryFormatter();
+
+            // Create a file using the passed-in file name
+            // Use a using statement to automatically clean up object references
+            // and close the file handle when the serialization process is complete
+            using (Stream stream = File.Create(fileName))
+            {
+                // Serialize (save) the current instance of Zoo
+                formatter.Serialize(stream, this);
+            }
+        }
+
+        /// <summary>
+        /// Sells a ticket to a guest.
+        /// </summary>
+        /// <param name="guest">The guest to whom to sell the ticket.</param>
+        /// <returns>The sold ticket.</returns>
+        public Ticket SellTicket(Guest guest)
+        {
+            // Buy a ticket and a water bottle.
+            Ticket ticket = guest.VisitTicketBooth(this.ticketBooth);
+
+            // Get a coupon book and a map.
+            guest.VisitInformationBooth(this.informationBooth);
+
+            return ticket;
+        }
+
+        /// <summary>
+        /// Sort the Animals.
+        /// </summary>
+        /// <returns></returns>
+        public SortResult SortAnimals(string sortType, string sortValue, string sortBy, IList list)
+        {
+            SortResult sort = SortObjects(sortType, sortValue, sortBy, Animals.ToList());
+            return sort;
+        }
+
+        /// <summary>
+        /// Sort the Guests.
+        /// </summary>
+        /// <returns></returns>
+        public SortResult SortGuests(string sortType, string sortValue, string sortBy, IList list)
+        {
+            SortResult sort = SortObjects(sortType, sortValue, sortBy, Guests.ToList());
+            return sort;
+        }
+
+        /// <summary>
+        /// Sorts the zoo's list of animals.
+        /// </summary>
+        /// <param name="sortType">The type of sort to perform.</param>
+        /// <param name="sortValue">The value on which to sort.</param>
+        /// <returns>The result of sorting (number of swaps and number of comparisons).</returns>
+        public SortResult SortObjects(string sortType, string sortValue, string sortBy, IList list)
+        {
+            SortResult result = null;
+
+            Func<object, object, int> aVariable = null;
+
+            if (sortValue == "weight")
+            {
+                aVariable = WeightSortCompare;
+            }
+            else if (sortValue == "animalname")
+            {
+                aVariable = AnimalNameSortCompare;
+            }
+            else if (sortValue == "guestname")
+            {
+                aVariable = GuestNameSortCompare;
+            }
+            else if (sortValue == "age")
+            {
+                aVariable = AgeSortCompare;
+            }
+            else if(sortValue == "guestmoney")
+            {
+                aVariable = MoneySortCompare;
+            }
+
+            switch (sortType)
+            {
+                case "bubble":
+                        result = list.BubbleSort(aVariable);
+                    break;
+
+                case "selection":
+                        result = list.SelectionSort(aVariable);
+                    break;
+
+                case "insertion":
+                        result = list.InsertionSort(aVariable);
+                    break;
+
+                case "shell":
+                        result = list.ShellSort(aVariable);
+                    break;
+
+                case "quick":
+                    Stopwatch sw = new Stopwatch();
+                    sw.Start();
+                    SortResult sortResult = new SortResult();
+
+                    list.QuickSort(0, list.Count - 1, sortResult, aVariable);
+
+                    sw.Stop();
+                    sortResult.ElapsedMilliseconds = sw.Elapsed.TotalMilliseconds;
+
+                    result = sortResult;
+                    break;
+
+                default:
+                    break;
+            }
+
+            return result;
+        }
+
+        public void OnDeserialized()
+        {
+            OnBirthingRoomTemperatureChange(this.b168.Temperature, this.b168.Temperature);
+
+            this.guests.ForEach(g => OnAddGuest(g));
+
+            this.animals.ForEach(a =>
+            {
+                OnAddAnimal(a);
+                a.OnPregnant = reproducer => this.b168.PregnantAnimals.Enqueue(reproducer);
+            });
+        }
+
+        /// <summary>
+        /// Adds a list of animals to the zoo.
+        /// </summary>
+        /// <param name="animals">The list of animals to add to zoo.</param>
+        private void AddAnimalsToZoo(IEnumerable<Animal> animals)
+        {
+            // loop through passed-in list of animals
+            foreach (Animal a in animals)
+            {
+                // add the animal to the list (use AddAnimal)
+                this.AddAnimal(a);
+
+                // using recursion, add the current animal's children to the zoo
+                this.AddAnimalsToZoo(a.Children);
+            }
+        }
+
+        private VendingMachine ProvideVendingMachine()
+        {
+            return this.animalSnackMachine;
+        }
+
+        private static int AnimalNameSortCompare(object object1, object object2)
+        {
+            // Assuming objects have a property 'Name' of type string
+            return string.Compare(((Animal)object1).Name, ((Animal)object2).Name);
+        }
+
+        private static int GuestNameSortCompare(object object1, object object2)
+        {
+            // Assuming objects have a property 'Name' of type string
+            return string.Compare(((Guest)object1).Name, ((Guest)object2).Name);
+        }
+
+        private static int WeightSortCompare(object object1, object object2)
+        {
+            // Assuming objects have a property 'Weight' of type int or float
+            int result = 0;
+
+            Animal animal1 = object1 as Animal;
+            Animal animal2 = object2 as Animal;
+
+            if (animal1.Weight == animal2.Weight)
+            {
+                result = 0;
+            }
+            else if (animal1.Weight > animal2.Weight)
+            {
+                result = 1;
+            }
+            else if (animal1.Weight < animal2.Weight)
+            {
+                result = -1;
+            }
+
+            return result;
+        }
+
+        private static int MoneySortCompare(object object1, object object2)
+        {
+            // Assuming objects have a property 'Weight' of type int or float
+            int result = 0;
+
+            decimal compareSum1 = ((Guest)object1).Wallet.MoneyBalance + ((Guest)object1).CheckingAccount.MoneyBalance;
+
+            decimal compareSum2 = ((Guest)object2).Wallet.MoneyBalance + ((Guest)object2).CheckingAccount.MoneyBalance;
+
+            if (compareSum1 == compareSum2)
+            {
+                result = 0;
+            }
+            else if (compareSum1 > compareSum2)
+            {
+                result = 1;
+            }
+            else if (compareSum1 < compareSum2)
+            {
+                result = -1;
+            }
+
+            return result;
+        }
+
+        private static int AgeSortCompare(object object1, object object2)
+        {
+            // Assuming objects are of type 'Animal' and have a property 'Age' of type int
+            int result = 0;
+
+            Animal animal1 = object1 as Animal;
+            Animal animal2 = object2 as Animal;
+
+            if (animal1.Age == animal2.Age)
+            {
+                result = 0;
+            }
+            else if (animal1.Age > animal2.Age)
+            {
+                result = 1;
+            }
+            else if (animal1.Age < animal2.Age)
+            {
+                result = -1;
+            }
+
+            return result;
+        }
+
     }
 }

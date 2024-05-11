@@ -8,7 +8,18 @@
         /// <summary>
         /// Gets a value indicating whether or not the reproducer is pregnant.
         /// </summary>
-        bool IsPregnant { get; }
+        bool IsPregnant
+        {
+            get;
+        }
+
+        /// <summary>
+        /// Gets the weight of the reproducer.
+        /// </summary>
+        double Weight
+        {
+            get;
+        }
 
         /// <summary>
         /// Makes the reproducer pregnant.

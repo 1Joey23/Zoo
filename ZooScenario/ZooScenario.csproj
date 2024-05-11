@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ZooScenario</RootNamespace>
     <AssemblyName>ZooScenario</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
@@ -54,7 +54,6 @@
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="AnimalWindow.xaml">
       <SubType>Designer</SubType>
@@ -119,57 +118,59 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Accounts\Accounts.csproj">
-      <Project>{8547f40c-afab-4ed7-b3e8-7e7c6400f4e1}</Project>
+      <Project>{dd92848a-816d-4835-8f51-ce72bd5407db}</Project>
       <Name>Accounts</Name>
     </ProjectReference>
     <ProjectReference Include="..\Animals\Animals.csproj">
-      <Project>{7bace754-1eee-45ea-a30f-2fb3288f212f}</Project>
+      <Project>{ce73316d-b770-4638-a44e-5732a4182f4f}</Project>
       <Name>Animals</Name>
     </ProjectReference>
     <ProjectReference Include="..\BirthingRooms\BirthingRooms.csproj">
-      <Project>{26d16c95-ba19-4b45-8906-27a4aa0185a9}</Project>
+      <Project>{c1b52860-8b01-4800-973a-30ae80b7e507}</Project>
       <Name>BirthingRooms</Name>
     </ProjectReference>
     <ProjectReference Include="..\BoothItems\BoothItems.csproj">
-      <Project>{6740e2b0-ebbb-4494-a237-fb1e5bdb6b07}</Project>
+      <Project>{0115e053-5070-4a75-9566-f3c86b43d03d}</Project>
       <Name>BoothItems</Name>
     </ProjectReference>
     <ProjectReference Include="..\CagedItems\CagedItems.csproj">
-      <Project>{C686BD3C-0C39-4D01-9094-0816D1553933}</Project>
+      <Project>{311a1629-f6b5-4f9f-956d-3da0c82757ee}</Project>
       <Name>CagedItems</Name>
     </ProjectReference>
     <ProjectReference Include="..\Foods\Foods.csproj">
-      <Project>{ac8c3583-7543-494e-9d31-11959b3e4f55}</Project>
+      <Project>{6a2cf901-3c8d-4a75-a5da-7949cda8765a}</Project>
       <Name>Foods</Name>
     </ProjectReference>
     <ProjectReference Include="..\MoneyCollectors\MoneyCollectors.csproj">
-      <Project>{e594795e-389e-405b-9dda-fade3d870d79}</Project>
+      <Project>{1df4cea5-9e59-4be6-a00f-ee3cf3087c08}</Project>
       <Name>MoneyCollectors</Name>
     </ProjectReference>
     <ProjectReference Include="..\People\People.csproj">
-      <Project>{56f9e695-9c71-49f4-a4e2-df464b254173}</Project>
+      <Project>{aa1b7651-2f2c-4348-aa31-14fddcdbdc5a}</Project>
       <Name>People</Name>
     </ProjectReference>
     <ProjectReference Include="..\Reproducers\Reproducers.csproj">
-      <Project>{31a1844c-33a9-4351-802a-f3aa4c31cc5e}</Project>
+      <Project>{28bf9fc3-ea4a-49ad-a49c-fd8ca77174f4}</Project>
       <Name>Reproducers</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Toys\Toys.csproj">
+      <Project>{95b997e0-17a0-4276-a7a9-34b30e9d69b8}</Project>
+      <Name>Toys</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Utilities\Utilities.csproj">
-      <Project>{6C2BBBA5-7367-450E-AC92-5484A17F0EB9}</Project>
+      <Project>{afb7aa8c-157a-405d-8574-0355c1631e61}</Project>
       <Name>Utilities</Name>
     </ProjectReference>
     <ProjectReference Include="..\VendingMachines\VendingMachines.csproj">
-      <Project>{54d73b95-bd3f-4f43-aed3-387de16ea703}</Project>
+      <Project>{261ec534-ce38-4b28-9b11-b329b125e909}</Project>
       <Name>VendingMachines</Name>
     </ProjectReference>
     <ProjectReference Include="..\Zoos\Zoos.csproj">
-      <Project>{b9cb6e8b-ea4f-4f4d-b663-8447e9d02d63}</Project>
+      <Project>{9116e7a7-d531-4b54-a3df-9552f4f06139}</Project>
       <Name>Zoos</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
